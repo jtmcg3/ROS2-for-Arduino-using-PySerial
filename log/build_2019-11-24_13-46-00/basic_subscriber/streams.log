@@ -1,0 +1,26 @@
+Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_subscriber --record /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/install.log --single-version-externally-managed
+running egg_info
+writing /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/PKG-INFO
+writing dependency_links to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/dependency_links.txt
+writing entry points to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/entry_points.txt
+writing requirements to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/requires.txt
+writing top-level names to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/top_level.txt
+reading manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'
+writing manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'
+running build
+running build_py
+copying basic_subscriber/subscriber_node.py -> /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build/lib/basic_subscriber
+running install
+running install_lib
+copying /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build/lib/basic_subscriber/subscriber_node.py -> /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages/basic_subscriber
+byte-compiling /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages/basic_subscriber/subscriber_node.py to subscriber_node.cpython-36.pyc
+running install_data
+copying package.xml -> /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber
+running install_egg_info
+removing '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages/basic_subscriber-0.0.0-py3.6.egg-info' (and everything under it)
+Copying /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info to /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages/basic_subscriber-0.0.0-py3.6.egg-info
+running install_scripts
+Installing listener script to /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/basic_subscriber
+Installing talker script to /home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/basic_subscriber
+writing list of installed files to '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/install.log'
+Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_subscriber --record /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/install.log --single-version-externally-managed

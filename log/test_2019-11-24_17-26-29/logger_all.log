@@ -1,0 +1,157 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test']
+[0.125s] DEBUG:colcon:Parsed command line arguments: Namespace(abort_on_error=False, base_paths='.', build_base='build', ctest_args=None, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base='log', log_level=None, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7faea3ddd780>>, merge_install=False, metas='./colcon.meta', packages_above=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, parallel_workers=4, paths=None, pytest_args=None, python_testing=None, retest_until_fail=0, retest_until_pass=0, return_code_on_test_failure=False, test_result_base=None, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7faea3ddd780>, verb_name='test', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7faea3de9940>)
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.158s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/autobob/ros2-dashing/pubsub'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' with type 'ros.ament_python' and name 'basic_publisher'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' with type 'ros.ament_python' and name 'basic_subscriber'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/serial_led' with type 'ros.ament_python' and name 'serial_led'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/serial_motor' with type 'ros.ament_python' and name 'serial_motor'
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' test argument 'ctest_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' test argument 'python_testing' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' test argument 'pytest_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' test argument 'retest_until_pass' from command line to '0'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' test argument 'retest_until_fail' from command line to '0'
+[0.187s] DEBUG:colcon.colcon_core.verb.test:Testing package 'basic_publisher' with the following arguments: {'build_base': '/home/autobob/ros2-dashing/pubsub/build/basic_publisher', 'ctest_args': None, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/basic_publisher', 'path': '/home/autobob/ros2-dashing/pubsub/src/basic_publisher', 'pytest_args': None, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' test argument 'ctest_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' test argument 'python_testing' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' test argument 'pytest_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' test argument 'retest_until_pass' from command line to '0'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' test argument 'retest_until_fail' from command line to '0'
+[0.189s] DEBUG:colcon.colcon_core.verb.test:Testing package 'basic_subscriber' with the following arguments: {'build_base': '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber', 'ctest_args': None, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber', 'path': '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber', 'pytest_args': None, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None}
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'serial_led' test argument 'ctest_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'serial_led' test argument 'python_testing' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'serial_led' test argument 'pytest_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'serial_led' test argument 'retest_until_pass' from command line to '0'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'serial_led' test argument 'retest_until_fail' from command line to '0'
+[0.192s] DEBUG:colcon.colcon_core.verb.test:Testing package 'serial_led' with the following arguments: {'build_base': '/home/autobob/ros2-dashing/pubsub/build/serial_led', 'ctest_args': None, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/serial_led', 'path': '/home/autobob/ros2-dashing/pubsub/src/serial_led', 'pytest_args': None, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' test argument 'ctest_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' test argument 'python_testing' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' test argument 'pytest_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' test argument 'retest_until_pass' from command line to '0'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' test argument 'retest_until_fail' from command line to '0'
+[0.195s] DEBUG:colcon.colcon_core.verb.test:Testing package 'serial_motor' with the following arguments: {'build_base': '/home/autobob/ros2-dashing/pubsub/build/serial_motor', 'ctest_args': None, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/serial_motor', 'path': '/home/autobob/ros2-dashing/pubsub/src/serial_motor', 'pytest_args': None, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None}
+[0.196s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.197s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.197s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' with build type'ament_python'
+[0.197s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher'
+[0.200s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.203s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.205s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' with build type'ament_python'
+[0.206s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.211s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/autobob/ros2-dashing/pubsub/src/serial_led' with build type'ament_python'
+[0.211s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/autobob/ros2-dashing/pubsub/src/serial_led'
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.216s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.218s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/autobob/ros2-dashing/pubsub/src/serial_motor' with build type'ament_python'
+[0.218s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/autobob/ros2-dashing/pubsub/src/serial_motor'
+[0.220s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.220s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.221s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.454s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[0.454s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher:/home/autobob/ros2-dashing/pubsub/install/basic_subscriber:/opt/ros/dashing PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/pytest.xml --junit-prefix=basic_publisher -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher
+[0.708s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[0.709s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/pytest.xml --junit-prefix=basic_subscriber -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/.pytest_cache /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber
+[1.048s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.048s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[1.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/serial_led': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/serial_led:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/serial_led/pytest.xml --junit-prefix=serial_led -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/serial_led/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_led
+[1.546s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.546s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[1.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/serial_motor': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/serial_motor/pytest.xml --junit-prefix=serial_motor -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/serial_motor/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_motor
+[1.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' returned '1': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher:/home/autobob/ros2-dashing/pubsub/install/basic_subscriber:/opt/ros/dashing PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/pytest.xml --junit-prefix=basic_publisher -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher
+[1.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/pytest.xml --junit-prefix=basic_subscriber -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/.pytest_cache /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber
+[2.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/serial_led' returned '1': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/serial_led:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/serial_led/pytest.xml --junit-prefix=serial_led -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/serial_led/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_led
+[2.470s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/serial_motor' returned '1': AMENT_PREFIX_PATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/serial_motor/pytest.xml --junit-prefix=serial_motor -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/serial_motor/.pytest_cache PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py pytest egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_motor
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.472s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.477s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.477s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.477s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.479s] DEBUG:colcon.colcon_core.event_reactor:joined thread

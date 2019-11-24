@@ -1,0 +1,3 @@
+[console_scripts]
+talker = basic_publisher.publisher_node:main
+

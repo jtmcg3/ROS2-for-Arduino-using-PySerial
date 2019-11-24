@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="3" time="0.272"><testcase classname="serial_motor.test.test_copyright" file="test/test_copyright.py" line="18" name="test_copyright" time="0.0063228607177734375"><failure message="AssertionError: Found errors
+assert 1 == 0">test/test_copyright.py:23: in test_copyright
+    assert rc == 0, &apos;Found errors&apos;
+E   AssertionError: Found errors
+E   assert 1 == 0</failure><system-err>serial_motor/motor_node.py: could not find copyright notice
+1 errors, checked 5 files
+</system-err></testcase><testcase classname="serial_motor.test.test_flake8" file="test/test_flake8.py" line="18" name="test_flake8" time="0.16345524787902832"><failure message="AssertionError: Found errors
+assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, &apos;Found errors&apos;
+E   AssertionError: Found errors
+E   assert 1 == 0</failure><system-out>
+./serial_motor/motor_node.py:6:1: E302 expected 2 blank lines, found 1
+class MotorController(Node):
+^
+
+./serial_motor/motor_node.py:8:1: W191 indentation contains tabs
+	def __init__(self):
+^
+
+./serial_motor/motor_node.py:9:1: W191 indentation contains tabs
+		super().__init__(&apos;motor_controller&apos;)
+^
+
+./serial_motor/motor_node.py:10:1: W191 indentation contains tabs
+		self.motor_sub = self.create_subscription(String,
+^
+
+./serial_motor/motor_node.py:11:1: W191 indentation contains tabs
+			                                         &apos;motor_topic&apos;,
+^
+
+./serial_motor/motor_node.py:11:4: E101 indentation contains mixed spaces and tabs
+			                                         &apos;motor_topic&apos;,
+   ^
+
+./serial_motor/motor_node.py:12:1: W191 indentation contains tabs
+			                                         self.motor_listener_callback,
+^
+
+./serial_motor/motor_node.py:12:4: E101 indentation contains mixed spaces and tabs
+			                                         self.motor_listener_callback,
+   ^
+
+./serial_motor/motor_node.py:13:1: W191 indentation contains tabs
+			                                         10)
+^
+
+./serial_motor/motor_node.py:13:4: E101 indentation contains mixed spaces and tabs
+			                                         10)
+   ^
+
+./serial_motor/motor_node.py:14:1: W191 indentation contains tabs
+		self.motor_sub # prevent unused variable warning
+^
+
+./serial_motor/motor_node.py:14:17: E261 at least two spaces before inline comment
+		self.motor_sub # prevent unused variable warning
+                ^
+
+./serial_motor/motor_node.py:17:1: W191 indentation contains tabs
+	def motor_listener_callback(self, msg):
+^
+
+./serial_motor/motor_node.py:17:2: E303 too many blank lines (2)
+	def motor_listener_callback(self, msg):
+ ^
+
+./serial_motor/motor_node.py:18:1: W191 indentation contains tabs
+		self.ser = serial.Serial(&apos;/dev/ttyACM0&apos;)
+^
+
+./serial_motor/motor_node.py:19:1: W191 indentation contains tabs
+		if msg == &quot;lock&quot;:
+^
+
+./serial_motor/motor_node.py:20:1: W191 indentation contains tabs
+			self.ser.write(b&quot;lock!&quot;)
+^
+
+./serial_motor/motor_node.py:21:1: W191 indentation contains tabs
+		else:
+^
+
+./serial_motor/motor_node.py:22:1: W191 indentation contains tabs
+			self.ser.write(b&apos;unlock!&apos;)
+^
+
+./serial_motor/motor_node.py:23:1: W191 indentation contains tabs
+		self.ser.close()
+^
+
+./serial_motor/motor_node.py:27:1: W191 indentation contains tabs
+	rclpy.init(args=args)
+^
+
+./serial_motor/motor_node.py:28:1: W191 indentation contains tabs
+	motor_controller = MotorController()
+^
+
+./serial_motor/motor_node.py:29:1: W191 indentation contains tabs
+	rclpy.spin(motor_controller)
+^
+
+./serial_motor/motor_node.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == &apos;__main__&apos;:
+^
+
+./serial_motor/motor_node.py:32:1: W391 blank line at end of file
+	main()^
+
+3     E101 indentation contains mixed spaces and tabs
+1     E261 at least two spaces before inline comment
+1     E302 expected 2 blank lines, found 1
+1     E303 too many blank lines (2)
+1     E305 expected 2 blank lines after class or function definition, found 1
+17    W191 indentation contains tabs
+1     W391 blank line at end of file
+
+6 files checked
+25 errors
+
+&apos;E&apos;-type errors: 7
+&apos;W&apos;-type errors: 18
+
+Checked files:
+
+* ./setup.py
+* ./serial_motor/motor_node.py
+* ./serial_motor/__init__.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+</system-out></testcase><testcase classname="serial_motor.test.test_pep257" file="test/test_pep257.py" line="18" name="test_pep257" time="0.030242443084716797"><system-out>checking ./serial_motor/__init__.py
+checking ./serial_motor/motor_node.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking test/test_copyright.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+No problems found
+</system-out></testcase></testsuite>

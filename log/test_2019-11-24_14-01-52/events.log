@@ -1,0 +1,789 @@
+[0.000000] (-) TimerEvent: {}
+[0.000662] (basic_publisher) JobQueued: {'identifier': 'basic_publisher', 'dependencies': OrderedDict([('basic_publisher', '/home/autobob/ros2-dashing/pubsub/install/basic_publisher')])}
+[0.000726] (basic_subscriber) JobQueued: {'identifier': 'basic_subscriber', 'dependencies': OrderedDict([('basic_subscriber', '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber')])}
+[0.001432] (basic_publisher) JobStarted: {'identifier': 'basic_publisher'}
+[0.007643] (basic_subscriber) JobStarted: {'identifier': 'basic_subscriber'}
+[0.099655] (-) TimerEvent: {}
+[0.200132] (-) TimerEvent: {}
+[0.250470] (basic_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'pytest', 'egg_info', '--egg-base', '/home/autobob/ros2-dashing/pubsub/build/basic_publisher'], 'cwd': '/home/autobob/ros2-dashing/pubsub/src/basic_publisher', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PLATFORM_JSON': '', 'USER': 'autobob', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1370', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '1', 'OLDPWD': '/home/autobob/ros2-dashing/pubsub/src', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/autobob', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PASS_COUNT': '0', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'dashing', 'MAIN_PLATFORMS': 'declare -A main_platforms=([due]="arduino:sam:arduino_due_x" [mkr1000]="arduino:samd:mkr1000" [opencr]="OpenCR:OpenCR:OpenCR")', 'LOGNAME': 'autobob', 'GTK_IM_MODULE': 'ibus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'autobob', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FAIL_COUNT': '0', 'WINDOWPATH': '2', 'PATH': '/home/autobob/arduino_ide:/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SKIP_COUNT': '0', 'SESSION_MANAGER': 'local/bob-ros:@/tmp/.ICE-unix/1275,unix/bob-ros:/tmp/.ICE-unix/1275', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/59aaf81e_07b1_4da1_927e_748e4a8be191', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'GNOME_TERMINAL_SERVICE': ':1.70', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/autobob/ros2-dashing/pubsub/install/basic_publisher:/opt/ros/dashing', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/autobob/ros2-dashing/pubsub/build/basic_publisher', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PDE_COUNT': '0', 'PYTHONPATH': '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'VTE_VERSION': '5202', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/pytest.xml --junit-prefix=basic_publisher -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_publisher/.pytest_cache'}, 'shell': False}
+[0.300316] (-) TimerEvent: {}
+[0.400786] (-) TimerEvent: {}
+[0.501025] (-) TimerEvent: {}
+[0.502445] (basic_publisher) StdoutLine: {'line': b'running pytest\n'}
+[0.541439] (basic_subscriber) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'pytest', 'egg_info', '--egg-base', '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber'], 'cwd': '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PLATFORM_JSON': '', 'USER': 'autobob', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1370', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '1', 'OLDPWD': '/home/autobob/ros2-dashing/pubsub/src', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/autobob', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PASS_COUNT': '0', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'dashing', 'MAIN_PLATFORMS': 'declare -A main_platforms=([due]="arduino:sam:arduino_due_x" [mkr1000]="arduino:samd:mkr1000" [opencr]="OpenCR:OpenCR:OpenCR")', 'LOGNAME': 'autobob', 'GTK_IM_MODULE': 'ibus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'autobob', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FAIL_COUNT': '0', 'WINDOWPATH': '2', 'PATH': '/home/autobob/arduino_ide:/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SKIP_COUNT': '0', 'SESSION_MANAGER': 'local/bob-ros:@/tmp/.ICE-unix/1275,unix/bob-ros:/tmp/.ICE-unix/1275', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/59aaf81e_07b1_4da1_927e_748e4a8be191', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'GNOME_TERMINAL_SERVICE': ':1.70', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber:/opt/ros/dashing', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PDE_COUNT': '0', 'PYTHONPATH': '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'VTE_VERSION': '5202', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/pytest.xml --junit-prefix=basic_subscriber -o cache_dir=/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/.pytest_cache'}, 'shell': False}
+[0.595613] (basic_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[0.596230] (basic_publisher) StdoutLine: {'line': b'writing /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/PKG-INFO\n'}
+[0.596491] (basic_publisher) StdoutLine: {'line': b'writing dependency_links to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/dependency_links.txt\n'}
+[0.596685] (basic_publisher) StdoutLine: {'line': b'writing entry points to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/entry_points.txt\n'}
+[0.596852] (basic_publisher) StdoutLine: {'line': b'writing requirements to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/requires.txt\n'}
+[0.596995] (basic_publisher) StdoutLine: {'line': b'writing top-level names to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/top_level.txt\n'}
+[0.601104] (-) TimerEvent: {}
+[0.620038] (basic_publisher) StdoutLine: {'line': b"reading manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/SOURCES.txt'\n"}
+[0.620892] (basic_publisher) StdoutLine: {'line': b"writing manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/SOURCES.txt'\n"}
+[0.621981] (basic_publisher) StdoutLine: {'line': b'running build_ext\n'}
+[0.700700] (basic_subscriber) StdoutLine: {'line': b'running pytest\n'}
+[0.701173] (-) TimerEvent: {}
+[0.730471] (basic_publisher) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.730720] (basic_publisher) StdoutLine: {'line': b'platform linux -- Python 3.6.8, pytest-3.3.2, py-1.5.2, pluggy-0.6.0\n'}
+[0.730842] (basic_publisher) StdoutLine: {'line': b'rootdir: /home/autobob/ros2-dashing/pubsub/src/basic_publisher, inifile:\n'}
+[0.730958] (basic_publisher) StdoutLine: {'line': b'plugins: ament-xmllint-0.7.11, ament-pep257-0.7.11, ament-lint-0.7.11, ament-flake8-0.7.11, ament-copyright-0.7.11, cov-2.5.1\n'}
+[0.732991] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\n'}
+[0.736725] (basic_publisher) StdoutLine: {'line': b'collecting 0 items                                                             \x1b[0m\x1b[1m\n'}
+[0.746015] (basic_publisher) StdoutLine: {'line': b'collecting 1 item                                                              \x1b[0m\x1b[1m\n'}
+[0.770071] (basic_publisher) StdoutLine: {'line': b'collecting 2 items                                                             \x1b[0m\x1b[1m\n'}
+[0.770318] (basic_publisher) StdoutLine: {'line': b'collecting 3 items                                                             \x1b[0m\x1b[1m\n'}
+[0.770434] (basic_publisher) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.770617] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.790565] (basic_publisher) StdoutLine: {'line': b'test/test_copyright.py F\x1b[36m                                                 [ 33%]\x1b[0m\n'}
+[0.792690] (basic_subscriber) StdoutLine: {'line': b'running egg_info\n'}
+[0.793333] (basic_subscriber) StdoutLine: {'line': b'writing /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/PKG-INFO\n'}
+[0.793579] (basic_subscriber) StdoutLine: {'line': b'writing dependency_links to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/dependency_links.txt\n'}
+[0.793761] (basic_subscriber) StdoutLine: {'line': b'writing entry points to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/entry_points.txt\n'}
+[0.793994] (basic_subscriber) StdoutLine: {'line': b'writing requirements to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/requires.txt\n'}
+[0.794106] (basic_subscriber) StdoutLine: {'line': b'writing top-level names to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/top_level.txt\n'}
+[0.801259] (-) TimerEvent: {}
+[0.818187] (basic_subscriber) StdoutLine: {'line': b"reading manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'\n"}
+[0.819012] (basic_subscriber) StdoutLine: {'line': b"writing manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'\n"}
+[0.821351] (basic_subscriber) StdoutLine: {'line': b'running build_ext\n'}
+[0.901348] (-) TimerEvent: {}
+[0.919991] (basic_publisher) StdoutLine: {'line': b'test/test_flake8.py F\x1b[36m                                                    [ 66%]\x1b[0m\n'}
+[0.938625] (basic_publisher) StdoutLine: {'line': b'test/test_pep257.py .\x1b[36m                                                    [100%]\x1b[0m\n'}
+[0.938987] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.939676] (basic_publisher) StdoutLine: {'line': b' generated xml file: /home/autobob/ros2-dashing/pubsub/build/basic_publisher/pytest.xml \n'}
+[0.940563] (basic_publisher) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.941118] (basic_publisher) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[0.941234] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[0.941341] (basic_publisher) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found errors'\x1b[0m\n"}
+[0.941434] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[0.941528] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.941622] (basic_publisher) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.941728] (basic_publisher) StdoutLine: {'line': b'basic_publisher/publisher_node.py: could not find copyright notice\n'}
+[0.941923] (basic_publisher) StdoutLine: {'line': b'1 errors, checked 5 files\n'}
+[0.942109] (basic_publisher) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.942225] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.942328] (basic_publisher) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found errors'\x1b[0m\n"}
+[0.942432] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[0.942534] (basic_publisher) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.942635] (basic_publisher) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.942738] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.942840] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[0.942943] (basic_publisher) StdoutLine: {'line': b'class MinimalPublisher(Node):\n'}
+[0.943045] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.943145] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.943247] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:8:1: W191 indentation contains tabs\n'}
+[0.943349] (basic_publisher) StdoutLine: {'line': b'\tdef __init__(self):\n'}
+[0.943451] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.943540] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.943627] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:9:1: W191 indentation contains tabs\n'}
+[0.943713] (basic_publisher) StdoutLine: {'line': b"\t\tsuper().__init__('minimal_publisher')\n"}
+[0.943806] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.943907] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.944009] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:10:1: W191 indentation contains tabs\n'}
+[0.944115] (basic_publisher) StdoutLine: {'line': b"\t\tself.publisher_ = self.create_publisher(String, 'topic', 10)\n"}
+[0.944221] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.944327] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.944456] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:11:1: W191 indentation contains tabs\n'}
+[0.944569] (basic_publisher) StdoutLine: {'line': b'\t\ttimer_perdiod = 0.5 # second\n'}
+[0.944676] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.944781] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.944885] (basic_publisher) StdoutLine: {'line': b"./basic_publisher/publisher_node.py:11:3: F841 local variable 'timer_perdiod' is assigned to but never used\n"}
+[0.945000] (basic_publisher) StdoutLine: {'line': b'\t\ttimer_perdiod = 0.5 # second\n'}
+[0.945105] (basic_publisher) StdoutLine: {'line': b'  ^\n'}
+[0.945212] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.945318] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:11:22: E261 at least two spaces before inline comment\n'}
+[0.945424] (basic_publisher) StdoutLine: {'line': b'\t\ttimer_perdiod = 0.5 # second\n'}
+[0.945530] (basic_publisher) StdoutLine: {'line': b'                     ^\n'}
+[0.945633] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.945738] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:12:1: W191 indentation contains tabs\n'}
+[0.945843] (basic_publisher) StdoutLine: {'line': b'\t\tself.timer = self.create_timer(timer_period, self.timer_callback)\n'}
+[0.945949] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.946055] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.946159] (basic_publisher) StdoutLine: {'line': b"./basic_publisher/publisher_node.py:12:34: F821 undefined name 'timer_period'\n"}
+[0.946264] (basic_publisher) StdoutLine: {'line': b'\t\tself.timer = self.create_timer(timer_period, self.timer_callback)\n'}
+[0.946370] (basic_publisher) StdoutLine: {'line': b'                                 ^\n'}
+[0.946474] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.946579] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:13:1: W191 indentation contains tabs\n'}
+[0.946700] (basic_publisher) StdoutLine: {'line': b'\t\tself.i = 0\n'}
+[0.946807] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.946916] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.947020] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:15:1: W191 indentation contains tabs\n'}
+[0.947128] (basic_publisher) StdoutLine: {'line': b'\tdef timer_callback(self):\n'}
+[0.947233] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.947339] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.947444] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:16:1: W191 indentation contains tabs\n'}
+[0.947549] (basic_publisher) StdoutLine: {'line': b'\t\tmsg = String()\n'}
+[0.947655] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.947761] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.947865] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:17:1: W191 indentation contains tabs\n'}
+[0.947972] (basic_publisher) StdoutLine: {'line': b"\t\tmsg.data = 'OMG so many things {}'.format(self.i)\n"}
+[0.948079] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.948182] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.948289] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:18:1: W191 indentation contains tabs\n'}
+[0.948394] (basic_publisher) StdoutLine: {'line': b'\t\tself.publisher_.publish(msg)\n'}
+[0.948508] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.948616] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.948722] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:19:1: W191 indentation contains tabs\n'}
+[0.948826] (basic_publisher) StdoutLine: {'line': b"\t\tself.get_logger.info('Publishing {}'.format(msg.data))\n"}
+[0.948933] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.949038] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.949142] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:20:1: W191 indentation contains tabs\n'}
+[0.949249] (basic_publisher) StdoutLine: {'line': b'\t\tself.i += 1\n'}
+[0.949353] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.949457] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.949563] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:22:1: E302 expected 2 blank lines, found 1\n'}
+[0.949669] (basic_publisher) StdoutLine: {'line': b'def main(args=None):\n'}
+[0.949775] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.949880] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.949984] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:23:1: W191 indentation contains tabs\n'}
+[0.950091] (basic_publisher) StdoutLine: {'line': b'\trclpy.init(args=args)\n'}
+[0.950192] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.950281] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.950370] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:24:1: W191 indentation contains tabs\n'}
+[0.950457] (basic_publisher) StdoutLine: {'line': b'\tminimal_publisher = MinimalPublisher()\n'}
+[0.950545] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.950637] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.950725] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:25:1: W191 indentation contains tabs\n'}
+[0.950809] (basic_publisher) StdoutLine: {'line': b'\trclpy.spin(minimal_publisher)\n'}
+[0.950897] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.950984] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.951069] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:27:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.951162] (basic_publisher) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[0.951265] (basic_publisher) StdoutLine: {'line': b'^\n'}
+[0.951367] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.951469] (basic_publisher) StdoutLine: {'line': b'./basic_publisher/publisher_node.py:28:1: W391 blank line at end of file\n'}
+[0.951571] (basic_publisher) StdoutLine: {'line': b'\tmain()^\n'}
+[0.951673] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.951774] (basic_publisher) StdoutLine: {'line': b'1     E261 at least two spaces before inline comment\n'}
+[0.951885] (basic_publisher) StdoutLine: {'line': b'2     E302 expected 2 blank lines, found 1\n'}
+[0.951986] (basic_publisher) StdoutLine: {'line': b'1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.952088] (basic_publisher) StdoutLine: {'line': b"1     F821 undefined name 'timer_period'\n"}
+[0.952188] (basic_publisher) StdoutLine: {'line': b"1     F841 local variable 'timer_perdiod' is assigned to but never used\n"}
+[0.952290] (basic_publisher) StdoutLine: {'line': b'15    W191 indentation contains tabs\n'}
+[0.952391] (basic_publisher) StdoutLine: {'line': b'1     W391 blank line at end of file\n'}
+[0.952499] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.952600] (basic_publisher) StdoutLine: {'line': b'6 files checked\n'}
+[0.952701] (basic_publisher) StdoutLine: {'line': b'22 errors\n'}
+[0.952801] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.952905] (basic_publisher) StdoutLine: {'line': b"'E'-type errors: 4\n"}
+[0.953004] (basic_publisher) StdoutLine: {'line': b"'F'-type errors: 2\n"}
+[0.953105] (basic_publisher) StdoutLine: {'line': b"'W'-type errors: 16\n"}
+[0.953198] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.953299] (basic_publisher) StdoutLine: {'line': b'Checked files:\n'}
+[0.953402] (basic_publisher) StdoutLine: {'line': b'\n'}
+[0.953504] (basic_publisher) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.953606] (basic_publisher) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.953709] (basic_publisher) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.953812] (basic_publisher) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.953914] (basic_publisher) StdoutLine: {'line': b'* ./basic_publisher/__init__.py\n'}
+[0.954016] (basic_publisher) StdoutLine: {'line': b'* ./basic_publisher/publisher_node.py\n'}
+[0.954117] (basic_publisher) StdoutLine: {'line': b'------------------------------ Captured log call -------------------------------\n'}
+[0.954219] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-v, --verbose, action=count, default=0, dest=verbose, type=None, callback=None, help=Print more information about what is happening in flake8. This option is repeatable and will increase verbosity each time it is repeated., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.954330] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-q, --quiet, action=count, default=0, dest=quiet, type=None, callback=None, help=Report only file names, or nothing. This option is repeatable., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.954436] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --count, action=store_true, default=None, dest=count, type=None, callback=None, help=Print total number of errors and warnings to standard error and set the exit code to 1 if total is not empty., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.954541] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --diff, action=store_true, default=None, dest=diff, type=None, callback=None, help=Report changes only within line number ranges in the unified diff provided on standard in by the user., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.954649] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exclude, action=None, default=.svn,CVS,.bzr,.hg,.git,__pycache__,.tox,.eggs,*.egg, dest=exclude, type=None, callback=None, help=Comma-separated list of files or directories to exclude. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".\n'}
+[0.954761] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --filename, action=None, default=*.py, dest=filename, type=None, callback=None, help=Only check for filenames matching the patterns in this comma-separated list. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".\n'}
+[0.954880] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --stdin-display-name, action=None, default=stdin, dest=stdin_display_name, type=None, callback=None, help=The name used when reporting errors from code passed via stdin. This is useful for editors piping the file contents to flake8. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.954984] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --format, action=None, default=default, dest=format, type=None, callback=None, help=Format errors according to the chosen formatter., callback=None, callback_args=None, callback_kwargs=None, metavar=format)".\n'}
+[0.955087] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --hang-closing, action=store_true, default=None, dest=hang_closing, type=None, callback=None, help=Hang closing bracket instead of matching indentation of opening bracket\'s line., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.955191] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --ignore, action=None, default=E121,E123,E126,E226,E24,E704,W503,W504, dest=ignore, type=None, callback=None, help=Comma-separated list of errors and warnings to ignore (or skip). For example, ``--ignore=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".\n'}
+[0.955299] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --max-line-length, action=None, default=79, dest=max_line_length, type=int, callback=None, help=Maximum allowed line length for the entirety of this run. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=n)".\n'}
+[0.955405] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --select, action=None, default=E,F,W,C90, dest=select, type=None, callback=None, help=Comma-separated list of errors and warnings to enable. For example, ``--select=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".\n'}
+[0.955508] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --disable-noqa, action=store_true, default=False, dest=disable_noqa, type=None, callback=None, help=Disable the effect of "# noqa". This will report errors on lines with "# noqa" at the end., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.955613] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --show-source, action=store_true, default=None, dest=show_source, type=None, callback=None, help=Show the source generate each error or warning., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.955716] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --statistics, action=store_true, default=None, dest=statistics, type=None, callback=None, help=Count errors and warnings., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.955819] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --enable-extensions, action=None, default=, dest=enable_extensions, type=string, callback=None, help=Enable plugins and extensions that are otherwise disabled by default, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.955922] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exit-zero, action=store_true, default=None, dest=exit_zero, type=None, callback=None, help=Exit with status code "0" even if there are errors., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956034] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --install-hook, action=callback, default=None, dest=install_hook, type=choice, callback=<function install at 0x7f3d4b5aaea0>, help=Install a hook that is run prior to a commit for the supported version control system., callback=<function install at 0x7f3d4b5aaea0>, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956137] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-j, --jobs, action=None, default=auto, dest=jobs, type=string, callback=None, help=Number of subprocesses to use to run checks in parallel. This is ignored on Windows. The default, "auto", will auto-detect the number of processors available to use. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956256] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --output-file, action=None, default=None, dest=output_file, type=string, callback=None, help=Redirect report to a file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956357] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --tee, action=store_true, default=False, dest=tee, type=None, callback=None, help=Write to stdout and output-file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956457] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --append-config, action=append, default=None, dest=append_config, type=None, callback=None, help=Provide extra config files to parse in addition to the files found by Flake8 by default. These files are the last ones read and so they take the highest precedence when multiple files provide the same option., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956549] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --config, action=None, default=None, dest=config, type=None, callback=None, help=Path to the config file that will be the authoritative config source. This will cause Flake8 to ignore all other configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956638] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --isolated, action=store_true, default=False, dest=isolated, type=None, callback=None, help=Ignore all found configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956724] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --benchmark, action=store_true, default=False, dest=benchmark, type=None, callback=None, help=Print benchmark information about this run of Flake8, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.956810] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --bug-report, action=callback, default=None, dest=bug_report, type=None, callback=<function print_information at 0x7f3d4b5aac80>, help=Print information necessary when preparing a bug report, callback=<function print_information at 0x7f3d4b5aac80>, callback_args=None, callback_kwargs={\'option_manager\': <flake8.options.manager.OptionManager object at 0x7f3d494b1588>}, metavar=None)".\n'}
+[0.956898] (basic_publisher) StdoutLine: {'line': b"config.py                  128 DEBUG    Found local configuration files: ['/home/autobob/ros2-dashing/pubsub/src/basic_publisher/setup.cfg']\n"}
+[0.956989] (basic_publisher) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.extension".\n'}
+[0.957074] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="C90", entry_point="C90 = mccabe:McCabeChecker") for plugin "C90".\n'}
+[0.957160] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="F", entry_point="F = flake8.plugins.pyflakes:FlakesChecker") for plugin "F".\n'}
+[0.957243] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.ambiguous_identifier", entry_point="pycodestyle.ambiguous_identifier = pycodestyle:ambiguous_identifier") for plugin "pycodestyle.ambiguous_identifier".\n'}
+[0.957333] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.bare_except", entry_point="pycodestyle.bare_except = pycodestyle:bare_except") for plugin "pycodestyle.bare_except".\n'}
+[0.957435] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.blank_lines", entry_point="pycodestyle.blank_lines = pycodestyle:blank_lines") for plugin "pycodestyle.blank_lines".\n'}
+[0.957537] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.break_around_binary_operator", entry_point="pycodestyle.break_around_binary_operator = pycodestyle:break_around_binary_operator") for plugin "pycodestyle.break_around_binary_operator".\n'}
+[0.957641] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_negative", entry_point="pycodestyle.comparison_negative = pycodestyle:comparison_negative") for plugin "pycodestyle.comparison_negative".\n'}
+[0.957757] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_to_singleton", entry_point="pycodestyle.comparison_to_singleton = pycodestyle:comparison_to_singleton") for plugin "pycodestyle.comparison_to_singleton".\n'}
+[0.957866] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_type", entry_point="pycodestyle.comparison_type = pycodestyle:comparison_type") for plugin "pycodestyle.comparison_type".\n'}
+[0.957965] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.compound_statements", entry_point="pycodestyle.compound_statements = pycodestyle:compound_statements") for plugin "pycodestyle.compound_statements".\n'}
+[0.958120] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.continued_indentation", entry_point="pycodestyle.continued_indentation = pycodestyle:continued_indentation") for plugin "pycodestyle.continued_indentation".\n'}
+[0.958229] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.explicit_line_join", entry_point="pycodestyle.explicit_line_join = pycodestyle:explicit_line_join") for plugin "pycodestyle.explicit_line_join".\n'}
+[0.958332] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.extraneous_whitespace", entry_point="pycodestyle.extraneous_whitespace = pycodestyle:extraneous_whitespace") for plugin "pycodestyle.extraneous_whitespace".\n'}
+[0.958427] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.imports_on_separate_lines", entry_point="pycodestyle.imports_on_separate_lines = pycodestyle:imports_on_separate_lines") for plugin "pycodestyle.imports_on_separate_lines".\n'}
+[0.958545] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.indentation", entry_point="pycodestyle.indentation = pycodestyle:indentation") for plugin "pycodestyle.indentation".\n'}
+[0.958658] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.maximum_line_length", entry_point="pycodestyle.maximum_line_length = pycodestyle:maximum_line_length") for plugin "pycodestyle.maximum_line_length".\n'}
+[0.958766] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace", entry_point="pycodestyle.missing_whitespace = pycodestyle:missing_whitespace") for plugin "pycodestyle.missing_whitespace".\n'}
+[0.958855] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_after_import_keyword", entry_point="pycodestyle.missing_whitespace_after_import_keyword = pycodestyle:missing_whitespace_after_import_keyword") for plugin "pycodestyle.missing_whitespace_after_import_keyword".\n'}
+[0.958941] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_around_operator", entry_point="pycodestyle.missing_whitespace_around_operator = pycodestyle:missing_whitespace_around_operator") for plugin "pycodestyle.missing_whitespace_around_operator".\n'}
+[0.959038] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.module_imports_on_top_of_file", entry_point="pycodestyle.module_imports_on_top_of_file = pycodestyle:module_imports_on_top_of_file") for plugin "pycodestyle.module_imports_on_top_of_file".\n'}
+[0.959145] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_backticks", entry_point="pycodestyle.python_3000_backticks = pycodestyle:python_3000_backticks") for plugin "pycodestyle.python_3000_backticks".\n'}
+[0.959252] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_has_key", entry_point="pycodestyle.python_3000_has_key = pycodestyle:python_3000_has_key") for plugin "pycodestyle.python_3000_has_key".\n'}
+[0.959366] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_not_equal", entry_point="pycodestyle.python_3000_not_equal = pycodestyle:python_3000_not_equal") for plugin "pycodestyle.python_3000_not_equal".\n'}
+[0.959472] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_raise_comma", entry_point="pycodestyle.python_3000_raise_comma = pycodestyle:python_3000_raise_comma") for plugin "pycodestyle.python_3000_raise_comma".\n'}
+[0.959582] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_obsolete", entry_point="pycodestyle.tabs_obsolete = pycodestyle:tabs_obsolete") for plugin "pycodestyle.tabs_obsolete".\n'}
+[0.959699] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_or_spaces", entry_point="pycodestyle.tabs_or_spaces = pycodestyle:tabs_or_spaces") for plugin "pycodestyle.tabs_or_spaces".\n'}
+[0.959809] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_blank_lines", entry_point="pycodestyle.trailing_blank_lines = pycodestyle:trailing_blank_lines") for plugin "pycodestyle.trailing_blank_lines".\n'}
+[0.959916] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_whitespace", entry_point="pycodestyle.trailing_whitespace = pycodestyle:trailing_whitespace") for plugin "pycodestyle.trailing_whitespace".\n'}
+[0.960024] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_comma", entry_point="pycodestyle.whitespace_around_comma = pycodestyle:whitespace_around_comma") for plugin "pycodestyle.whitespace_around_comma".\n'}
+[0.960136] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_keywords", entry_point="pycodestyle.whitespace_around_keywords = pycodestyle:whitespace_around_keywords") for plugin "pycodestyle.whitespace_around_keywords".\n'}
+[0.960244] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_named_parameter_equals", entry_point="pycodestyle.whitespace_around_named_parameter_equals = pycodestyle:whitespace_around_named_parameter_equals") for plugin "pycodestyle.whitespace_around_named_parameter_equals".\n'}
+[0.960353] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_operator", entry_point="pycodestyle.whitespace_around_operator = pycodestyle:whitespace_around_operator") for plugin "pycodestyle.whitespace_around_operator".\n'}
+[0.960485] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_comment", entry_point="pycodestyle.whitespace_before_comment = pycodestyle:whitespace_before_comment") for plugin "pycodestyle.whitespace_before_comment".\n'}
+[0.960595] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_parameters", entry_point="pycodestyle.whitespace_before_parameters = pycodestyle:whitespace_before_parameters") for plugin "pycodestyle.whitespace_before_parameters".\n'}
+[0.960703] (basic_publisher) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.listen".\n'}
+[0.960809] (basic_publisher) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.report".\n'}
+[0.960916] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="default", entry_point="default = flake8.formatting.default:Default") for plugin "default".\n'}
+[0.961022] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pylint", entry_point="pylint = flake8.formatting.default:Pylint") for plugin "pylint".\n'}
+[0.961128] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="quiet-filename", entry_point="quiet-filename = flake8.formatting.default:FilenameOnly") for plugin "quiet-filename".\n'}
+[0.961231] (basic_publisher) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="quiet-nothing", entry_point="quiet-nothing = flake8.formatting.default:Nothing") for plugin "quiet-nothing".\n'}
+[0.961319] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "C90" from entry-point.\n'}
+[0.961401] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "F" from entry-point.\n'}
+[0.961481] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.ambiguous_identifier" from entry-point.\n'}
+[0.961567] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.bare_except" from entry-point.\n'}
+[0.961672] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.blank_lines" from entry-point.\n'}
+[0.961779] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.break_around_binary_operator" from entry-point.\n'}
+[0.961884] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_negative" from entry-point.\n'}
+[0.961990] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_to_singleton" from entry-point.\n'}
+[0.962095] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_type" from entry-point.\n'}
+[0.962206] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.compound_statements" from entry-point.\n'}
+[0.962323] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.continued_indentation" from entry-point.\n'}
+[0.962427] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.explicit_line_join" from entry-point.\n'}
+[0.962524] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.extraneous_whitespace" from entry-point.\n'}
+[0.962629] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.imports_on_separate_lines" from entry-point.\n'}
+[0.962734] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.indentation" from entry-point.\n'}
+[0.962841] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.maximum_line_length" from entry-point.\n'}
+[0.962945] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace" from entry-point.\n'}
+[0.963048] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_after_import_keyword" from entry-point.\n'}
+[0.963152] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_around_operator" from entry-point.\n'}
+[0.963259] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.module_imports_on_top_of_file" from entry-point.\n'}
+[0.963362] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_backticks" from entry-point.\n'}
+[0.963466] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_has_key" from entry-point.\n'}
+[0.963556] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_not_equal" from entry-point.\n'}
+[0.963659] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_raise_comma" from entry-point.\n'}
+[0.963766] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_obsolete" from entry-point.\n'}
+[0.963872] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_or_spaces" from entry-point.\n'}
+[0.963976] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_blank_lines" from entry-point.\n'}
+[0.964081] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_whitespace" from entry-point.\n'}
+[0.964187] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_comma" from entry-point.\n'}
+[0.964292] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_keywords" from entry-point.\n'}
+[0.964397] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_named_parameter_equals" from entry-point.\n'}
+[0.964513] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_operator" from entry-point.\n'}
+[0.964618] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_comment" from entry-point.\n'}
+[0.964731] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_parameters" from entry-point.\n'}
+[0.964837] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "default" from entry-point.\n'}
+[0.964942] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pylint" from entry-point.\n'}
+[0.965048] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "quiet-filename" from entry-point.\n'}
+[0.965153] (basic_publisher) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "quiet-nothing" from entry-point.\n'}
+[0.965258] (basic_publisher) StdoutLine: {'line': b'manager.py                 231 DEBUG    Registering options from plugin "C90" on OptionManager <flake8.options.manager.OptionManager object at 0x7f3d494b1588>\n'}
+[0.965357] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --max-complexity, action=store, default=-1, dest=max_complexity, type=int, callback=None, help=McCabe complexity threshold, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.965463] (basic_publisher) StdoutLine: {'line': b"manager.py                 219 DEBUG    Removing ['C90'] from the default ignore list\n"}
+[0.965569] (basic_publisher) StdoutLine: {'line': b'manager.py                 225 DEBUG    Attempted to remove C90 from default ignore but it was not a member of the list.\n'}
+[0.965673] (basic_publisher) StdoutLine: {'line': b"manager.py                 244 DEBUG    Extending default select list with ['C90']\n"}
+[0.965778] (basic_publisher) StdoutLine: {'line': b'manager.py                 231 DEBUG    Registering options from plugin "F" on OptionManager <flake8.options.manager.OptionManager object at 0x7f3d494b1588>\n'}
+[0.965884] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --builtins, action=None, default=None, dest=builtins, type=None, callback=None, help=define more built-ins, comma separated, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.966014] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --doctests, action=store_true, default=False, dest=doctests, type=None, callback=None, help=check syntax of the doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.966124] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --include-in-doctest, action=None, default=, dest=include_in_doctest, type=string, callback=None, help=Run doctests only on these files, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.966232] (basic_publisher) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exclude-from-doctest, action=None, default=, dest=exclude_from_doctest, type=string, callback=None, help=Skip these files when running doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[0.966340] (basic_publisher) StdoutLine: {'line': b"manager.py                 219 DEBUG    Removing ['F'] from the default ignore list\n"}
+[0.966445] (basic_publisher) StdoutLine: {'line': b'manager.py                 225 DEBUG    Attempted to remove F from default ignore but it was not a member of the list.\n'}
+[0.966550] (basic_publisher) StdoutLine: {'line': b"manager.py                 244 DEBUG    Extending default select list with ['F']\n"}
+[0.966653] (basic_publisher) StdoutLine: {'line': b'config.py                  294 DEBUG    Ignoring user and locally found configuration files. Reading only configuration from "/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini" specified via --config by the user\n'}
+[0.966758] (basic_publisher) StdoutLine: {'line': b"config.py                   85 DEBUG    Found cli configuration files: ['/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini']\n"}
+[0.966869] (basic_publisher) StdoutLine: {'line': b'config.py                  249 DEBUG    Parsing CLI configuration files.\n'}
+[0.966975] (basic_publisher) StdoutLine: {'line': b'config.py                  195 DEBUG    Option "extend-ignore" is not registered. Ignoring.\n'}
+[0.967081] (basic_publisher) StdoutLine: {'line': b'config.py                  195 DEBUG    Option "import-order-style" is not registered. Ignoring.\n'}
+[0.967187] (basic_publisher) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "max-line-length" returned value: 99\n'}
+[0.967292] (basic_publisher) StdoutLine: {'line': b'config.py                  187 DEBUG    99 has been normalized to 99 for option "max_line_length"\n'}
+[0.967396] (basic_publisher) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "show-source" returned value: True\n'}
+[0.967502] (basic_publisher) StdoutLine: {'line': b'config.py                  187 DEBUG    True has been normalized to True for option "show_source"\n'}
+[0.967604] (basic_publisher) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "statistics" returned value: True\n'}
+[0.967709] (basic_publisher) StdoutLine: {'line': b'config.py                  187 DEBUG    True has been normalized to True for option "statistics"\n'}
+[0.967814] (basic_publisher) StdoutLine: {'line': b'aggregator.py               52 DEBUG    Extended default ignore list: []\n'}
+[0.967917] (basic_publisher) StdoutLine: {'line': b"aggregator.py               55 DEBUG    Merged default ignore list: ['E226', 'E123', 'E24', 'E121', 'W503', 'W504', 'E126', 'E704']\n"}
+[0.968021] (basic_publisher) StdoutLine: {'line': b"aggregator.py               59 DEBUG    Extended default select list: ['C90', 'F']\n"}
+[0.968127] (basic_publisher) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (79) for "max_line_length" with (99)\n'}
+[0.968234] (basic_publisher) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (None) for "show_source" with (True)\n'}
+[0.968338] (basic_publisher) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (None) for "statistics" with (True)\n'}
+[0.968468] (basic_publisher) StdoutLine: {'line': b'manager.py                 208 DEBUG    Providing options to plugin "C90".\n'}
+[0.968580] (basic_publisher) StdoutLine: {'line': b'manager.py                 208 DEBUG    Providing options to plugin "F".\n'}
+[0.968686] (basic_publisher) StdoutLine: {'line': b'manager.py                 376 DEBUG    Retrieving plugin for "default".\n'}
+[0.968790] (basic_publisher) StdoutLine: {'line': b'manager.py                 371 DEBUG    Checking for "default" in plugin type manager.\n'}
+[0.968895] (basic_publisher) StdoutLine: {'line': b'manager.py                 376 DEBUG    Retrieving plugin for "default".\n'}
+[0.968999] (basic_publisher) StdoutLine: {'line': b'checker.py                 341 INFO     Making checkers\n'}
+[0.969109] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher" has not been excluded\n'}
+[0.969212] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher" has not been excluded\n'}
+[0.969318] (basic_publisher) StdoutLine: {'line': b'checker.py                 192 DEBUG    ".eggs" has been excluded\n'}
+[0.969423] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/resource" has not been excluded\n'}
+[0.969530] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/basic_publisher" has not been excluded\n'}
+[0.969637] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/setup.py" has not been excluded\n'}
+[0.969757] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/setup.py" has not been excluded\n'}
+[0.969858] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/setup.cfg" has not been excluded\n'}
+[0.969963] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/setup.cfg" has not been excluded\n'}
+[0.970066] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/package.xml" has not been excluded\n'}
+[0.970170] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/package.xml" has not been excluded\n'}
+[0.970272] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test" has not been excluded\n'}
+[0.970376] (basic_publisher) StdoutLine: {'line': b'checker.py                 192 DEBUG    "__pycache__" has been excluded\n'}
+[0.970483] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test/test_flake8.py" has not been excluded\n'}
+[0.970583] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test_flake8.py" has not been excluded\n'}
+[0.970690] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test/test_pep257.py" has not been excluded\n'}
+[0.970793] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test_pep257.py" has not been excluded\n'}
+[0.970897] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test/test_copyright.py" has not been excluded\n'}
+[0.971005] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/test_copyright.py" has not been excluded\n'}
+[0.971110] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/resource" has not been excluded\n'}
+[0.971216] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/resource/basic_publisher" has not been excluded\n'}
+[0.971322] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/basic_publisher" has not been excluded\n'}
+[0.971428] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/basic_publisher" has not been excluded\n'}
+[0.971533] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/basic_publisher/__init__.py" has not been excluded\n'}
+[0.971639] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/__init__.py" has not been excluded\n'}
+[0.971743] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/basic_publisher/publisher_node.py" has not been excluded\n'}
+[0.971860] (basic_publisher) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_publisher/publisher_node.py" has not been excluded\n'}
+[0.971973] (basic_publisher) StdoutLine: {'line': b'checker.py                 248 INFO     Checking 6 files\n'}
+[0.972090] (basic_publisher) StdoutLine: {'line': b'application.py             311 INFO     Finished running\n'}
+[0.972203] (basic_publisher) StdoutLine: {'line': b'application.py             339 INFO     Reporting errors\n'}
+[0.972316] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E302" should be reported\n'}
+[0.972436] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E302" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.972554] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E302" will be "Decision.Selected"\n'}
+[0.972668] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_publisher/publisher_node.py', line_number=6, column_number=1, text='expected 2 blank lines, found 1', physical_line='class MinimalPublisher(Node):\\n') is not inline ignored\n"}
+[0.972786] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "W191" should be reported\n'}
+[0.972899] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "W191" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.973011] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "W191" will be "Decision.Selected"\n'}
+[0.973123] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=8, column_number=1, text='indentation contains tabs', physical_line='\\tdef __init__(self):\\n') is not inline ignored\n"}
+[0.973239] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_publisher/publisher_node.py\', line_number=9, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tsuper().__init__(\'minimal_publisher\')\\n") is not inline ignored\n'}
+[0.973363] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_publisher/publisher_node.py\', line_number=10, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tself.publisher_ = self.create_publisher(String, \'topic\', 10)\\n") is not inline ignored\n'}
+[0.973480] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=11, column_number=1, text='indentation contains tabs', physical_line='\\t\\ttimer_perdiod = 0.5 # second\\n') is not inline ignored\n"}
+[0.973597] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "F841" should be reported\n'}
+[0.973710] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "F841" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.973822] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "F841" will be "Decision.Selected"\n'}
+[0.973934] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'F841\', filename=\'./basic_publisher/publisher_node.py\', line_number=11, column_number=3, text="local variable \'timer_perdiod\' is assigned to but never used", physical_line=\'\\t\\ttimer_perdiod = 0.5 # second\\n\') is not inline ignored\n'}
+[0.974049] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E261" should be reported\n'}
+[0.974159] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E261" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.974364] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E261" will be "Decision.Selected"\n'}
+[0.974473] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E261', filename='./basic_publisher/publisher_node.py', line_number=11, column_number=22, text='at least two spaces before inline comment', physical_line='\\t\\ttimer_perdiod = 0.5 # second\\n') is not inline ignored\n"}
+[0.974588] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=12, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.timer = self.create_timer(timer_period, self.timer_callback)\\n') is not inline ignored\n"}
+[0.974698] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "F821" should be reported\n'}
+[0.974803] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "F821" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.974909] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "F821" will be "Decision.Selected"\n'}
+[0.975013] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'F821\', filename=\'./basic_publisher/publisher_node.py\', line_number=12, column_number=34, text="undefined name \'timer_period\'", physical_line=\'\\t\\tself.timer = self.create_timer(timer_period, self.timer_callback)\\n\') is not inline ignored\n'}
+[0.975119] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=13, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.i = 0\\n') is not inline ignored\n"}
+[0.975225] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=15, column_number=1, text='indentation contains tabs', physical_line='\\tdef timer_callback(self):\\n') is not inline ignored\n"}
+[0.975332] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=16, column_number=1, text='indentation contains tabs', physical_line='\\t\\tmsg = String()\\n') is not inline ignored\n"}
+[0.975438] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_publisher/publisher_node.py\', line_number=17, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tmsg.data = \'OMG so many things {}\'.format(self.i)\\n") is not inline ignored\n'}
+[0.975552] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=18, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.publisher_.publish(msg)\\n') is not inline ignored\n"}
+[0.975660] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_publisher/publisher_node.py\', line_number=19, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tself.get_logger.info(\'Publishing {}\'.format(msg.data))\\n") is not inline ignored\n'}
+[0.975777] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=20, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.i += 1\\n') is not inline ignored\n"}
+[0.975883] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_publisher/publisher_node.py', line_number=22, column_number=1, text='expected 2 blank lines, found 1', physical_line='def main(args=None):\\n') is not inline ignored\n"}
+[0.975988] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=23, column_number=1, text='indentation contains tabs', physical_line='\\trclpy.init(args=args)\\n') is not inline ignored\n"}
+[0.976099] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=24, column_number=1, text='indentation contains tabs', physical_line='\\tminimal_publisher = MinimalPublisher()\\n') is not inline ignored\n"}
+[0.976206] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_publisher/publisher_node.py', line_number=25, column_number=1, text='indentation contains tabs', physical_line='\\trclpy.spin(minimal_publisher)\\n') is not inline ignored\n"}
+[0.976313] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E305" should be reported\n'}
+[0.976440] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E305" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.976550] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E305" will be "Decision.Selected"\n'}
+[0.976654] (basic_publisher) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'E305\', filename=\'./basic_publisher/publisher_node.py\', line_number=27, column_number=1, text=\'expected 2 blank lines after class or function definition, found 1\', physical_line="if __name__ == \'__main__\':\\n") is not inline ignored\n'}
+[0.976762] (basic_publisher) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "W391" should be reported\n'}
+[0.976858] (basic_publisher) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "W391" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[0.976961] (basic_publisher) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "W391" will be "Decision.Selected"\n'}
+[0.977066] (basic_publisher) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W391', filename='./basic_publisher/publisher_node.py', line_number=28, column_number=1, text='blank line at end of file', physical_line='\\tmain()') is not inline ignored\n"}
+[0.977174] (basic_publisher) StdoutLine: {'line': b'application.py             343 INFO     Found a total of 22 violations and reported 22\n'}
+[0.977275] (basic_publisher) StdoutLine: {'line': b'\x1b[31m\x1b[1m====================== 2 failed, 1 passed in 0.21 seconds ======================\x1b[0m\n'}
+[0.977414] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.977521] (basic_subscriber) StdoutLine: {'line': b'platform linux -- Python 3.6.8, pytest-3.3.2, py-1.5.2, pluggy-0.6.0\n'}
+[0.977623] (basic_subscriber) StdoutLine: {'line': b'rootdir: /home/autobob/ros2-dashing/pubsub/src/basic_subscriber, inifile:\n'}
+[0.977718] (basic_subscriber) StdoutLine: {'line': b'plugins: ament-xmllint-0.7.11, ament-pep257-0.7.11, ament-lint-0.7.11, ament-flake8-0.7.11, ament-copyright-0.7.11, cov-2.5.1\n'}
+[0.977810] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\n'}
+[0.981284] (basic_subscriber) StdoutLine: {'line': b'collecting 0 items                                                             \x1b[0m\x1b[1m\n'}
+[0.991211] (basic_subscriber) StdoutLine: {'line': b'collecting 1 item                                                              \x1b[0m\x1b[1m\n'}
+[1.001439] (-) TimerEvent: {}
+[1.013894] (basic_publisher) CommandEnded: {'returncode': 1}
+[1.014311] (basic_publisher) TestFailure: {'identifier': 'basic_publisher'}
+[1.014352] (basic_publisher) JobEnded: {'identifier': 'basic_publisher', 'rc': 0}
+[1.017240] (basic_subscriber) StdoutLine: {'line': b'collecting 2 items                                                             \x1b[0m\x1b[1m\n'}
+[1.017402] (basic_subscriber) StdoutLine: {'line': b'collecting 3 items                                                             \x1b[0m\x1b[1m\n'}
+[1.017491] (basic_subscriber) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[1.017620] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.038076] (basic_subscriber) StdoutLine: {'line': b'test/test_copyright.py F\x1b[36m                                                 [ 33%]\x1b[0m\n'}
+[1.101527] (-) TimerEvent: {}
+[1.167684] (basic_subscriber) StdoutLine: {'line': b'test/test_flake8.py F\x1b[36m                                                    [ 66%]\x1b[0m\n'}
+[1.189305] (basic_subscriber) StdoutLine: {'line': b'test/test_pep257.py .\x1b[36m                                                    [100%]\x1b[0m\n'}
+[1.189955] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.190503] (basic_subscriber) StdoutLine: {'line': b' generated xml file: /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/pytest.xml \n'}
+[1.191027] (basic_subscriber) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.191285] (basic_subscriber) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[1.191358] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[1.191425] (basic_subscriber) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found errors'\x1b[0m\n"}
+[1.191488] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[1.191551] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.191613] (basic_subscriber) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[1.191675] (basic_subscriber) StdoutLine: {'line': b'basic_subscriber/subscriber_node.py: could not find copyright notice\n'}
+[1.191737] (basic_subscriber) StdoutLine: {'line': b'1 errors, checked 5 files\n'}
+[1.191798] (basic_subscriber) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[1.191861] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[1.191923] (basic_subscriber) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found errors'\x1b[0m\n"}
+[1.191985] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[1.192047] (basic_subscriber) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.192109] (basic_subscriber) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.192171] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.192234] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[1.192296] (basic_subscriber) StdoutLine: {'line': b'class MinimalSubscriber(Node):\n'}
+[1.192358] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.192443] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.192514] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:8:1: W191 indentation contains tabs\n'}
+[1.192577] (basic_subscriber) StdoutLine: {'line': b'\tdef __init__(self):\n'}
+[1.192639] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.192702] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.192765] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:9:1: W191 indentation contains tabs\n'}
+[1.192829] (basic_subscriber) StdoutLine: {'line': b"\t\tsuper().__init__('minimal_subscriber')\n"}
+[1.192892] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.192955] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.193018] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:10:1: W191 indentation contains tabs\n'}
+[1.193080] (basic_subscriber) StdoutLine: {'line': b'\t\tself.subscription = self.create_subscription(String,\n'}
+[1.193143] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.193206] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.193267] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:11:1: W191 indentation contains tabs\n'}
+[1.193337] (basic_subscriber) StdoutLine: {'line': b"\t\t\t                                         'topic',\n"}
+[1.193404] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.193466] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.193528] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:11:4: E101 indentation contains mixed spaces and tabs\n'}
+[1.193590] (basic_subscriber) StdoutLine: {'line': b"\t\t\t                                         'topic',\n"}
+[1.193652] (basic_subscriber) StdoutLine: {'line': b'   ^\n'}
+[1.193714] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.193775] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:11:45: E128 continuation line under-indented for visual indent\n'}
+[1.193837] (basic_subscriber) StdoutLine: {'line': b"\t\t\t                                         'topic',\n"}
+[1.193899] (basic_subscriber) StdoutLine: {'line': b'                                            ^\n'}
+[1.193960] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.194022] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:12:1: W191 indentation contains tabs\n'}
+[1.194084] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         self.listener_callback,\n'}
+[1.194145] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.194207] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.194268] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:12:4: E101 indentation contains mixed spaces and tabs\n'}
+[1.194338] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         self.listener_callback,\n'}
+[1.194400] (basic_subscriber) StdoutLine: {'line': b'   ^\n'}
+[1.194460] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.194521] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:12:45: E128 continuation line under-indented for visual indent\n'}
+[1.194583] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         self.listener_callback,\n'}
+[1.194643] (basic_subscriber) StdoutLine: {'line': b'                                            ^\n'}
+[1.194705] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.194766] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:13:1: W191 indentation contains tabs\n'}
+[1.194827] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         10)\n'}
+[1.194888] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.194948] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.195009] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:13:4: E101 indentation contains mixed spaces and tabs\n'}
+[1.195070] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         10)\n'}
+[1.195131] (basic_subscriber) StdoutLine: {'line': b'   ^\n'}
+[1.195192] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.195254] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:13:45: E128 continuation line under-indented for visual indent\n'}
+[1.195315] (basic_subscriber) StdoutLine: {'line': b'\t\t\t                                         10)\n'}
+[1.195377] (basic_subscriber) StdoutLine: {'line': b'                                            ^\n'}
+[1.195438] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.195499] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:14:1: W191 indentation contains tabs\n'}
+[1.195561] (basic_subscriber) StdoutLine: {'line': b'\t\tself.subscription # prevent unused variable warning\n'}
+[1.195623] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.195684] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.195746] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:14:20: E261 at least two spaces before inline comment\n'}
+[1.195807] (basic_subscriber) StdoutLine: {'line': b'\t\tself.subscription # prevent unused variable warning\n'}
+[1.195879] (basic_subscriber) StdoutLine: {'line': b'                   ^\n'}
+[1.195940] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.196003] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:16:1: W191 indentation contains tabs\n'}
+[1.196066] (basic_subscriber) StdoutLine: {'line': b'\tdef listener_callback(self, std_msgs):\t\t\n'}
+[1.196128] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.196190] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.196253] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:16:40: W291 trailing whitespace\n'}
+[1.196315] (basic_subscriber) StdoutLine: {'line': b'\tdef listener_callback(self, std_msgs):\t\t\n'}
+[1.196377] (basic_subscriber) StdoutLine: {'line': b'                                       ^\n'}
+[1.196452] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.196518] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:17:1: W191 indentation contains tabs\n'}
+[1.196581] (basic_subscriber) StdoutLine: {'line': b"\t\tself.get_logger.info('I heard: {}'.format(msg.data))\n"}
+[1.196643] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.196705] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.196767] (basic_subscriber) StdoutLine: {'line': b"./basic_subscriber/subscriber_node.py:17:45: F821 undefined name 'msg'\n"}
+[1.196830] (basic_subscriber) StdoutLine: {'line': b"\t\tself.get_logger.info('I heard: {}'.format(msg.data))\n"}
+[1.196891] (basic_subscriber) StdoutLine: {'line': b'                                            ^\n'}
+[1.196953] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.197015] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:19:1: E302 expected 2 blank lines, found 1\n'}
+[1.197078] (basic_subscriber) StdoutLine: {'line': b'def main(args=None):\n'}
+[1.197139] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.197201] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.197261] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:20:1: W191 indentation contains tabs\n'}
+[1.197322] (basic_subscriber) StdoutLine: {'line': b'\trclpy.init(args=args)\n'}
+[1.197383] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.197444] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.197505] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:21:1: W191 indentation contains tabs\n'}
+[1.197566] (basic_subscriber) StdoutLine: {'line': b'\tminimal_subscriber = MinimalSubscriber()\n'}
+[1.197627] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.197687] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.197747] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:22:1: W191 indentation contains tabs\n'}
+[1.197808] (basic_subscriber) StdoutLine: {'line': b'\trclpy.spin(minimal_subscriber)\n'}
+[1.197869] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.197930] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.197991] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:24:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.198053] (basic_subscriber) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[1.198114] (basic_subscriber) StdoutLine: {'line': b'^\n'}
+[1.198175] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.198236] (basic_subscriber) StdoutLine: {'line': b'./basic_subscriber/subscriber_node.py:25:1: W391 blank line at end of file\n'}
+[1.198296] (basic_subscriber) StdoutLine: {'line': b'\tmain()^\n'}
+[1.198357] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.198417] (basic_subscriber) StdoutLine: {'line': b'3     E101 indentation contains mixed spaces and tabs\n'}
+[1.198478] (basic_subscriber) StdoutLine: {'line': b'3     E128 continuation line under-indented for visual indent\n'}
+[1.198539] (basic_subscriber) StdoutLine: {'line': b'1     E261 at least two spaces before inline comment\n'}
+[1.198599] (basic_subscriber) StdoutLine: {'line': b'2     E302 expected 2 blank lines, found 1\n'}
+[1.198664] (basic_subscriber) StdoutLine: {'line': b'1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.198726] (basic_subscriber) StdoutLine: {'line': b"1     F821 undefined name 'msg'\n"}
+[1.198786] (basic_subscriber) StdoutLine: {'line': b'12    W191 indentation contains tabs\n'}
+[1.198847] (basic_subscriber) StdoutLine: {'line': b'1     W291 trailing whitespace\n'}
+[1.198908] (basic_subscriber) StdoutLine: {'line': b'1     W391 blank line at end of file\n'}
+[1.198969] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.199030] (basic_subscriber) StdoutLine: {'line': b'6 files checked\n'}
+[1.199092] (basic_subscriber) StdoutLine: {'line': b'25 errors\n'}
+[1.199154] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.199216] (basic_subscriber) StdoutLine: {'line': b"'E'-type errors: 10\n"}
+[1.199277] (basic_subscriber) StdoutLine: {'line': b"'F'-type errors: 1\n"}
+[1.199339] (basic_subscriber) StdoutLine: {'line': b"'W'-type errors: 14\n"}
+[1.199401] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.199463] (basic_subscriber) StdoutLine: {'line': b'Checked files:\n'}
+[1.199525] (basic_subscriber) StdoutLine: {'line': b'\n'}
+[1.199586] (basic_subscriber) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.199648] (basic_subscriber) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.199709] (basic_subscriber) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.199770] (basic_subscriber) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.199832] (basic_subscriber) StdoutLine: {'line': b'* ./basic_subscriber/subscriber_node.py\n'}
+[1.199894] (basic_subscriber) StdoutLine: {'line': b'* ./basic_subscriber/__init__.py\n'}
+[1.199956] (basic_subscriber) StdoutLine: {'line': b'------------------------------ Captured log call -------------------------------\n'}
+[1.200019] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-v, --verbose, action=count, default=0, dest=verbose, type=None, callback=None, help=Print more information about what is happening in flake8. This option is repeatable and will increase verbosity each time it is repeated., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200086] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-q, --quiet, action=count, default=0, dest=quiet, type=None, callback=None, help=Report only file names, or nothing. This option is repeatable., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200153] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --count, action=store_true, default=None, dest=count, type=None, callback=None, help=Print total number of errors and warnings to standard error and set the exit code to 1 if total is not empty., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200218] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --diff, action=store_true, default=None, dest=diff, type=None, callback=None, help=Report changes only within line number ranges in the unified diff provided on standard in by the user., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200288] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exclude, action=None, default=.svn,CVS,.bzr,.hg,.git,__pycache__,.tox,.eggs,*.egg, dest=exclude, type=None, callback=None, help=Comma-separated list of files or directories to exclude. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".\n'}
+[1.200352] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --filename, action=None, default=*.py, dest=filename, type=None, callback=None, help=Only check for filenames matching the patterns in this comma-separated list. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".\n'}
+[1.200426] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --stdin-display-name, action=None, default=stdin, dest=stdin_display_name, type=None, callback=None, help=The name used when reporting errors from code passed via stdin. This is useful for editors piping the file contents to flake8. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200501] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --format, action=None, default=default, dest=format, type=None, callback=None, help=Format errors according to the chosen formatter., callback=None, callback_args=None, callback_kwargs=None, metavar=format)".\n'}
+[1.200565] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --hang-closing, action=store_true, default=None, dest=hang_closing, type=None, callback=None, help=Hang closing bracket instead of matching indentation of opening bracket\'s line., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200628] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --ignore, action=None, default=E121,E123,E126,E226,E24,E704,W503,W504, dest=ignore, type=None, callback=None, help=Comma-separated list of errors and warnings to ignore (or skip). For example, ``--ignore=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".\n'}
+[1.200692] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --max-line-length, action=None, default=79, dest=max_line_length, type=int, callback=None, help=Maximum allowed line length for the entirety of this run. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=n)".\n'}
+[1.200755] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --select, action=None, default=E,F,W,C90, dest=select, type=None, callback=None, help=Comma-separated list of errors and warnings to enable. For example, ``--select=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".\n'}
+[1.200817] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --disable-noqa, action=store_true, default=False, dest=disable_noqa, type=None, callback=None, help=Disable the effect of "# noqa". This will report errors on lines with "# noqa" at the end., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200879] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --show-source, action=store_true, default=None, dest=show_source, type=None, callback=None, help=Show the source generate each error or warning., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.200945] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --statistics, action=store_true, default=None, dest=statistics, type=None, callback=None, help=Count errors and warnings., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201008] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --enable-extensions, action=None, default=, dest=enable_extensions, type=string, callback=None, help=Enable plugins and extensions that are otherwise disabled by default, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201077] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exit-zero, action=store_true, default=None, dest=exit_zero, type=None, callback=None, help=Exit with status code "0" even if there are errors., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201142] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --install-hook, action=callback, default=None, dest=install_hook, type=choice, callback=<function install at 0x7f9ace3a4f28>, help=Install a hook that is run prior to a commit for the supported version control system., callback=<function install at 0x7f9ace3a4f28>, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201205] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(-j, --jobs, action=None, default=auto, dest=jobs, type=string, callback=None, help=Number of subprocesses to use to run checks in parallel. This is ignored on Windows. The default, "auto", will auto-detect the number of processors available to use. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201269] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --output-file, action=None, default=None, dest=output_file, type=string, callback=None, help=Redirect report to a file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201331] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --tee, action=store_true, default=False, dest=tee, type=None, callback=None, help=Write to stdout and output-file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201393] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --append-config, action=append, default=None, dest=append_config, type=None, callback=None, help=Provide extra config files to parse in addition to the files found by Flake8 by default. These files are the last ones read and so they take the highest precedence when multiple files provide the same option., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201456] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --config, action=None, default=None, dest=config, type=None, callback=None, help=Path to the config file that will be the authoritative config source. This will cause Flake8 to ignore all other configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201518] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --isolated, action=store_true, default=False, dest=isolated, type=None, callback=None, help=Ignore all found configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201577] (-) TimerEvent: {}
+[1.201676] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --benchmark, action=store_true, default=False, dest=benchmark, type=None, callback=None, help=Print benchmark information about this run of Flake8, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.201770] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --bug-report, action=callback, default=None, dest=bug_report, type=None, callback=<function print_information at 0x7f9ace3a4d08>, help=Print information necessary when preparing a bug report, callback=<function print_information at 0x7f9ace3a4d08>, callback_args=None, callback_kwargs={\'option_manager\': <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>}, metavar=None)".\n'}
+[1.201846] (basic_subscriber) StdoutLine: {'line': b"config.py                  128 DEBUG    Found local configuration files: ['/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg']\n"}
+[1.201914] (basic_subscriber) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.extension".\n'}
+[1.201977] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="C90", entry_point="C90 = mccabe:McCabeChecker") for plugin "C90".\n'}
+[1.202040] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="F", entry_point="F = flake8.plugins.pyflakes:FlakesChecker") for plugin "F".\n'}
+[1.202108] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.ambiguous_identifier", entry_point="pycodestyle.ambiguous_identifier = pycodestyle:ambiguous_identifier") for plugin "pycodestyle.ambiguous_identifier".\n'}
+[1.202171] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.bare_except", entry_point="pycodestyle.bare_except = pycodestyle:bare_except") for plugin "pycodestyle.bare_except".\n'}
+[1.202233] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.blank_lines", entry_point="pycodestyle.blank_lines = pycodestyle:blank_lines") for plugin "pycodestyle.blank_lines".\n'}
+[1.202322] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.break_around_binary_operator", entry_point="pycodestyle.break_around_binary_operator = pycodestyle:break_around_binary_operator") for plugin "pycodestyle.break_around_binary_operator".\n'}
+[1.202416] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_negative", entry_point="pycodestyle.comparison_negative = pycodestyle:comparison_negative") for plugin "pycodestyle.comparison_negative".\n'}
+[1.202481] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_to_singleton", entry_point="pycodestyle.comparison_to_singleton = pycodestyle:comparison_to_singleton") for plugin "pycodestyle.comparison_to_singleton".\n'}
+[1.202545] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_type", entry_point="pycodestyle.comparison_type = pycodestyle:comparison_type") for plugin "pycodestyle.comparison_type".\n'}
+[1.202607] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.compound_statements", entry_point="pycodestyle.compound_statements = pycodestyle:compound_statements") for plugin "pycodestyle.compound_statements".\n'}
+[1.202670] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.continued_indentation", entry_point="pycodestyle.continued_indentation = pycodestyle:continued_indentation") for plugin "pycodestyle.continued_indentation".\n'}
+[1.202733] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.explicit_line_join", entry_point="pycodestyle.explicit_line_join = pycodestyle:explicit_line_join") for plugin "pycodestyle.explicit_line_join".\n'}
+[1.202795] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.extraneous_whitespace", entry_point="pycodestyle.extraneous_whitespace = pycodestyle:extraneous_whitespace") for plugin "pycodestyle.extraneous_whitespace".\n'}
+[1.202857] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.imports_on_separate_lines", entry_point="pycodestyle.imports_on_separate_lines = pycodestyle:imports_on_separate_lines") for plugin "pycodestyle.imports_on_separate_lines".\n'}
+[1.202920] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.indentation", entry_point="pycodestyle.indentation = pycodestyle:indentation") for plugin "pycodestyle.indentation".\n'}
+[1.202987] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.maximum_line_length", entry_point="pycodestyle.maximum_line_length = pycodestyle:maximum_line_length") for plugin "pycodestyle.maximum_line_length".\n'}
+[1.203049] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace", entry_point="pycodestyle.missing_whitespace = pycodestyle:missing_whitespace") for plugin "pycodestyle.missing_whitespace".\n'}
+[1.203111] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_after_import_keyword", entry_point="pycodestyle.missing_whitespace_after_import_keyword = pycodestyle:missing_whitespace_after_import_keyword") for plugin "pycodestyle.missing_whitespace_after_import_keyword".\n'}
+[1.203177] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_around_operator", entry_point="pycodestyle.missing_whitespace_around_operator = pycodestyle:missing_whitespace_around_operator") for plugin "pycodestyle.missing_whitespace_around_operator".\n'}
+[1.203241] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.module_imports_on_top_of_file", entry_point="pycodestyle.module_imports_on_top_of_file = pycodestyle:module_imports_on_top_of_file") for plugin "pycodestyle.module_imports_on_top_of_file".\n'}
+[1.203310] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_backticks", entry_point="pycodestyle.python_3000_backticks = pycodestyle:python_3000_backticks") for plugin "pycodestyle.python_3000_backticks".\n'}
+[1.203372] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_has_key", entry_point="pycodestyle.python_3000_has_key = pycodestyle:python_3000_has_key") for plugin "pycodestyle.python_3000_has_key".\n'}
+[1.203435] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_not_equal", entry_point="pycodestyle.python_3000_not_equal = pycodestyle:python_3000_not_equal") for plugin "pycodestyle.python_3000_not_equal".\n'}
+[1.203497] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_raise_comma", entry_point="pycodestyle.python_3000_raise_comma = pycodestyle:python_3000_raise_comma") for plugin "pycodestyle.python_3000_raise_comma".\n'}
+[1.203558] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_obsolete", entry_point="pycodestyle.tabs_obsolete = pycodestyle:tabs_obsolete") for plugin "pycodestyle.tabs_obsolete".\n'}
+[1.203620] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_or_spaces", entry_point="pycodestyle.tabs_or_spaces = pycodestyle:tabs_or_spaces") for plugin "pycodestyle.tabs_or_spaces".\n'}
+[1.203682] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_blank_lines", entry_point="pycodestyle.trailing_blank_lines = pycodestyle:trailing_blank_lines") for plugin "pycodestyle.trailing_blank_lines".\n'}
+[1.203744] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_whitespace", entry_point="pycodestyle.trailing_whitespace = pycodestyle:trailing_whitespace") for plugin "pycodestyle.trailing_whitespace".\n'}
+[1.203806] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_comma", entry_point="pycodestyle.whitespace_around_comma = pycodestyle:whitespace_around_comma") for plugin "pycodestyle.whitespace_around_comma".\n'}
+[1.203871] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_keywords", entry_point="pycodestyle.whitespace_around_keywords = pycodestyle:whitespace_around_keywords") for plugin "pycodestyle.whitespace_around_keywords".\n'}
+[1.203933] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_named_parameter_equals", entry_point="pycodestyle.whitespace_around_named_parameter_equals = pycodestyle:whitespace_around_named_parameter_equals") for plugin "pycodestyle.whitespace_around_named_parameter_equals".\n'}
+[1.203995] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_operator", entry_point="pycodestyle.whitespace_around_operator = pycodestyle:whitespace_around_operator") for plugin "pycodestyle.whitespace_around_operator".\n'}
+[1.204056] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_comment", entry_point="pycodestyle.whitespace_before_comment = pycodestyle:whitespace_before_comment") for plugin "pycodestyle.whitespace_before_comment".\n'}
+[1.204118] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_parameters", entry_point="pycodestyle.whitespace_before_parameters = pycodestyle:whitespace_before_parameters") for plugin "pycodestyle.whitespace_before_parameters".\n'}
+[1.204180] (basic_subscriber) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.listen".\n'}
+[1.204241] (basic_subscriber) StdoutLine: {'line': b'manager.py                 272 INFO     Loading entry-points for "flake8.report".\n'}
+[1.204305] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="default", entry_point="default = flake8.formatting.default:Default") for plugin "default".\n'}
+[1.204368] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="pylint", entry_point="pylint = flake8.formatting.default:Pylint") for plugin "pylint".\n'}
+[1.204465] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="quiet-filename", entry_point="quiet-filename = flake8.formatting.default:FilenameOnly") for plugin "quiet-filename".\n'}
+[1.204538] (basic_subscriber) StdoutLine: {'line': b'manager.py                 287 DEBUG    Loaded Plugin(name="quiet-nothing", entry_point="quiet-nothing = flake8.formatting.default:Nothing") for plugin "quiet-nothing".\n'}
+[1.204610] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "C90" from entry-point.\n'}
+[1.204674] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "F" from entry-point.\n'}
+[1.204737] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.ambiguous_identifier" from entry-point.\n'}
+[1.204799] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.bare_except" from entry-point.\n'}
+[1.204860] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.blank_lines" from entry-point.\n'}
+[1.204921] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.break_around_binary_operator" from entry-point.\n'}
+[1.204982] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_negative" from entry-point.\n'}
+[1.205042] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_to_singleton" from entry-point.\n'}
+[1.205103] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_type" from entry-point.\n'}
+[1.205167] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.compound_statements" from entry-point.\n'}
+[1.205228] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.continued_indentation" from entry-point.\n'}
+[1.205289] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.explicit_line_join" from entry-point.\n'}
+[1.205350] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.extraneous_whitespace" from entry-point.\n'}
+[1.205410] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.imports_on_separate_lines" from entry-point.\n'}
+[1.205471] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.indentation" from entry-point.\n'}
+[1.205532] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.maximum_line_length" from entry-point.\n'}
+[1.205593] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace" from entry-point.\n'}
+[1.205654] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_after_import_keyword" from entry-point.\n'}
+[1.205715] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_around_operator" from entry-point.\n'}
+[1.205776] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.module_imports_on_top_of_file" from entry-point.\n'}
+[1.205837] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_backticks" from entry-point.\n'}
+[1.205899] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_has_key" from entry-point.\n'}
+[1.205960] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_not_equal" from entry-point.\n'}
+[1.206021] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_raise_comma" from entry-point.\n'}
+[1.206083] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_obsolete" from entry-point.\n'}
+[1.206144] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_or_spaces" from entry-point.\n'}
+[1.206205] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_blank_lines" from entry-point.\n'}
+[1.206267] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_whitespace" from entry-point.\n'}
+[1.206328] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_comma" from entry-point.\n'}
+[1.206389] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_keywords" from entry-point.\n'}
+[1.206451] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_named_parameter_equals" from entry-point.\n'}
+[1.206513] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_operator" from entry-point.\n'}
+[1.206578] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_comment" from entry-point.\n'}
+[1.206639] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_parameters" from entry-point.\n'}
+[1.206705] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "default" from entry-point.\n'}
+[1.206766] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "pylint" from entry-point.\n'}
+[1.206828] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "quiet-filename" from entry-point.\n'}
+[1.206889] (basic_subscriber) StdoutLine: {'line': b'manager.py                 176 INFO     Loading plugin "quiet-nothing" from entry-point.\n'}
+[1.206958] (basic_subscriber) StdoutLine: {'line': b'manager.py                 231 DEBUG    Registering options from plugin "C90" on OptionManager <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>\n'}
+[1.207020] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --max-complexity, action=store, default=-1, dest=max_complexity, type=int, callback=None, help=McCabe complexity threshold, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.207084] (basic_subscriber) StdoutLine: {'line': b"manager.py                 219 DEBUG    Removing ['C90'] from the default ignore list\n"}
+[1.207145] (basic_subscriber) StdoutLine: {'line': b'manager.py                 225 DEBUG    Attempted to remove C90 from default ignore but it was not a member of the list.\n'}
+[1.207206] (basic_subscriber) StdoutLine: {'line': b"manager.py                 244 DEBUG    Extending default select list with ['C90']\n"}
+[1.207266] (basic_subscriber) StdoutLine: {'line': b'manager.py                 231 DEBUG    Registering options from plugin "F" on OptionManager <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>\n'}
+[1.207326] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --builtins, action=None, default=None, dest=builtins, type=None, callback=None, help=define more built-ins, comma separated, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.207388] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --doctests, action=store_true, default=False, dest=doctests, type=None, callback=None, help=check syntax of the doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.207450] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --include-in-doctest, action=None, default=, dest=include_in_doctest, type=string, callback=None, help=Run doctests only on these files, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.207512] (basic_subscriber) StdoutLine: {'line': b'manager.py                 210 DEBUG    Registered option "Option(None, --exclude-from-doctest, action=None, default=, dest=exclude_from_doctest, type=string, callback=None, help=Skip these files when running doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".\n'}
+[1.207574] (basic_subscriber) StdoutLine: {'line': b"manager.py                 219 DEBUG    Removing ['F'] from the default ignore list\n"}
+[1.207634] (basic_subscriber) StdoutLine: {'line': b'manager.py                 225 DEBUG    Attempted to remove F from default ignore but it was not a member of the list.\n'}
+[1.207695] (basic_subscriber) StdoutLine: {'line': b"manager.py                 244 DEBUG    Extending default select list with ['F']\n"}
+[1.207755] (basic_subscriber) StdoutLine: {'line': b'config.py                  294 DEBUG    Ignoring user and locally found configuration files. Reading only configuration from "/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini" specified via --config by the user\n'}
+[1.207817] (basic_subscriber) StdoutLine: {'line': b"config.py                   85 DEBUG    Found cli configuration files: ['/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini']\n"}
+[1.207881] (basic_subscriber) StdoutLine: {'line': b'config.py                  249 DEBUG    Parsing CLI configuration files.\n'}
+[1.207941] (basic_subscriber) StdoutLine: {'line': b'config.py                  195 DEBUG    Option "extend-ignore" is not registered. Ignoring.\n'}
+[1.208002] (basic_subscriber) StdoutLine: {'line': b'config.py                  195 DEBUG    Option "import-order-style" is not registered. Ignoring.\n'}
+[1.208062] (basic_subscriber) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "max-line-length" returned value: 99\n'}
+[1.208122] (basic_subscriber) StdoutLine: {'line': b'config.py                  187 DEBUG    99 has been normalized to 99 for option "max_line_length"\n'}
+[1.208181] (basic_subscriber) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "show-source" returned value: True\n'}
+[1.208241] (basic_subscriber) StdoutLine: {'line': b'config.py                  187 DEBUG    True has been normalized to True for option "show_source"\n'}
+[1.208301] (basic_subscriber) StdoutLine: {'line': b'config.py                  208 DEBUG    Option "statistics" returned value: True\n'}
+[1.208361] (basic_subscriber) StdoutLine: {'line': b'config.py                  187 DEBUG    True has been normalized to True for option "statistics"\n'}
+[1.208434] (basic_subscriber) StdoutLine: {'line': b'aggregator.py               52 DEBUG    Extended default ignore list: []\n'}
+[1.208503] (basic_subscriber) StdoutLine: {'line': b"aggregator.py               55 DEBUG    Merged default ignore list: ['E126', 'W503', 'E226', 'E24', 'E704', 'W504', 'E123', 'E121']\n"}
+[1.208564] (basic_subscriber) StdoutLine: {'line': b"aggregator.py               59 DEBUG    Extended default select list: ['F', 'C90']\n"}
+[1.208624] (basic_subscriber) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (79) for "max_line_length" with (99)\n'}
+[1.208684] (basic_subscriber) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (None) for "show_source" with (True)\n'}
+[1.208744] (basic_subscriber) StdoutLine: {'line': b'aggregator.py               73 DEBUG    Overriding default value of (None) for "statistics" with (True)\n'}
+[1.208804] (basic_subscriber) StdoutLine: {'line': b'manager.py                 208 DEBUG    Providing options to plugin "C90".\n'}
+[1.208871] (basic_subscriber) StdoutLine: {'line': b'manager.py                 208 DEBUG    Providing options to plugin "F".\n'}
+[1.208932] (basic_subscriber) StdoutLine: {'line': b'manager.py                 376 DEBUG    Retrieving plugin for "default".\n'}
+[1.208992] (basic_subscriber) StdoutLine: {'line': b'manager.py                 371 DEBUG    Checking for "default" in plugin type manager.\n'}
+[1.209053] (basic_subscriber) StdoutLine: {'line': b'manager.py                 376 DEBUG    Retrieving plugin for "default".\n'}
+[1.209112] (basic_subscriber) StdoutLine: {'line': b'checker.py                 341 INFO     Making checkers\n'}
+[1.209172] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber" has not been excluded\n'}
+[1.209233] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber" has not been excluded\n'}
+[1.209293] (basic_subscriber) StdoutLine: {'line': b'checker.py                 192 DEBUG    ".eggs" has been excluded\n'}
+[1.209354] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded\n'}
+[1.209415] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource" has not been excluded\n'}
+[1.209476] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.py" has not been excluded\n'}
+[1.209540] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.py" has not been excluded\n'}
+[1.209602] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg" has not been excluded\n'}
+[1.209663] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg" has not been excluded\n'}
+[1.209723] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/package.xml" has not been excluded\n'}
+[1.209784] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/package.xml" has not been excluded\n'}
+[1.209845] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test" has not been excluded\n'}
+[1.209906] (basic_subscriber) StdoutLine: {'line': b'checker.py                 192 DEBUG    "__pycache__" has been excluded\n'}
+[1.209968] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_flake8.py" has not been excluded\n'}
+[1.210029] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_flake8.py" has not been excluded\n'}
+[1.210091] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_pep257.py" has not been excluded\n'}
+[1.210151] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_pep257.py" has not been excluded\n'}
+[1.210213] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_copyright.py" has not been excluded\n'}
+[1.210275] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_copyright.py" has not been excluded\n'}
+[1.210336] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded\n'}
+[1.210396] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber/subscriber_node.py" has not been excluded\n'}
+[1.210457] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/subscriber_node.py" has not been excluded\n'}
+[1.210517] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber/__init__.py" has not been excluded\n'}
+[1.210578] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/__init__.py" has not been excluded\n'}
+[1.210641] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource" has not been excluded\n'}
+[1.210702] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource/basic_subscriber" has not been excluded\n'}
+[1.210763] (basic_subscriber) StdoutLine: {'line': b'checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded\n'}
+[1.210828] (basic_subscriber) StdoutLine: {'line': b'checker.py                 248 INFO     Checking 6 files\n'}
+[1.210889] (basic_subscriber) StdoutLine: {'line': b'application.py             311 INFO     Finished running\n'}
+[1.210948] (basic_subscriber) StdoutLine: {'line': b'application.py             339 INFO     Reporting errors\n'}
+[1.211008] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E302" should be reported\n'}
+[1.211075] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E302" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.211138] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E302" will be "Decision.Selected"\n'}
+[1.211198] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_subscriber/subscriber_node.py', line_number=6, column_number=1, text='expected 2 blank lines, found 1', physical_line='class MinimalSubscriber(Node):\\n') is not inline ignored\n"}
+[1.211260] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "W191" should be reported\n'}
+[1.211321] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "W191" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.211382] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "W191" will be "Decision.Selected"\n'}
+[1.211442] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=8, column_number=1, text='indentation contains tabs', physical_line='\\tdef __init__(self):\\n') is not inline ignored\n"}
+[1.211504] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=9, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tsuper().__init__(\'minimal_subscriber\')\\n") is not inline ignored\n'}
+[1.211567] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=10, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.subscription = self.create_subscription(String,\\n') is not inline ignored\n"}
+[1.211629] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=11, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\t\\t                                         \'topic\',\\n") is not inline ignored\n'}
+[1.211691] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E101" should be reported\n'}
+[1.211752] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E101" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.211891] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E101" will be "Decision.Selected"\n'}
+[1.212010] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'E101\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=11, column_number=4, text=\'indentation contains mixed spaces and tabs\', physical_line="\\t\\t\\t                                         \'topic\',\\n") is not inline ignored\n'}
+[1.212094] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E128" should be reported\n'}
+[1.212160] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E128" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.212222] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E128" will be "Decision.Selected"\n'}
+[1.212290] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'E128\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=11, column_number=45, text=\'continuation line under-indented for visual indent\', physical_line="\\t\\t\\t                                         \'topic\',\\n") is not inline ignored\n'}
+[1.212355] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=1, text='indentation contains tabs', physical_line='\\t\\t\\t                                         self.listener_callback,\\n') is not inline ignored\n"}
+[1.212427] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E101', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=4, text='indentation contains mixed spaces and tabs', physical_line='\\t\\t\\t                                         self.listener_callback,\\n') is not inline ignored\n"}
+[1.212505] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E128', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=45, text='continuation line under-indented for visual indent', physical_line='\\t\\t\\t                                         self.listener_callback,\\n') is not inline ignored\n"}
+[1.212571] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=1, text='indentation contains tabs', physical_line='\\t\\t\\t                                         10)\\n') is not inline ignored\n"}
+[1.212642] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E101', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=4, text='indentation contains mixed spaces and tabs', physical_line='\\t\\t\\t                                         10)\\n') is not inline ignored\n"}
+[1.212707] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E128', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=45, text='continuation line under-indented for visual indent', physical_line='\\t\\t\\t                                         10)\\n') is not inline ignored\n"}
+[1.212771] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=14, column_number=1, text='indentation contains tabs', physical_line='\\t\\tself.subscription # prevent unused variable warning\\n') is not inline ignored\n"}
+[1.212833] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E261" should be reported\n'}
+[1.212895] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E261" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.212956] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E261" will be "Decision.Selected"\n'}
+[1.213017] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E261', filename='./basic_subscriber/subscriber_node.py', line_number=14, column_number=20, text='at least two spaces before inline comment', physical_line='\\t\\tself.subscription # prevent unused variable warning\\n') is not inline ignored\n"}
+[1.213080] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=16, column_number=1, text='indentation contains tabs', physical_line='\\tdef listener_callback(self, std_msgs):\\t\\t\\n') is not inline ignored\n"}
+[1.213142] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "W291" should be reported\n'}
+[1.213209] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "W291" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.213270] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "W291" will be "Decision.Selected"\n'}
+[1.213331] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W291', filename='./basic_subscriber/subscriber_node.py', line_number=16, column_number=40, text='trailing whitespace', physical_line='\\tdef listener_callback(self, std_msgs):\\t\\t\\n') is not inline ignored\n"}
+[1.213393] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'W191\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=17, column_number=1, text=\'indentation contains tabs\', physical_line="\\t\\tself.get_logger.info(\'I heard: {}\'.format(msg.data))\\n") is not inline ignored\n'}
+[1.213455] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "F821" should be reported\n'}
+[1.213516] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "F821" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.213576] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "F821" will be "Decision.Selected"\n'}
+[1.213637] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'F821\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=17, column_number=45, text="undefined name \'msg\'", physical_line="\\t\\tself.get_logger.info(\'I heard: {}\'.format(msg.data))\\n") is not inline ignored\n'}
+[1.213700] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_subscriber/subscriber_node.py', line_number=19, column_number=1, text='expected 2 blank lines, found 1', physical_line='def main(args=None):\\n') is not inline ignored\n"}
+[1.213762] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=20, column_number=1, text='indentation contains tabs', physical_line='\\trclpy.init(args=args)\\n') is not inline ignored\n"}
+[1.213828] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=21, column_number=1, text='indentation contains tabs', physical_line='\\tminimal_subscriber = MinimalSubscriber()\\n') is not inline ignored\n"}
+[1.213891] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=22, column_number=1, text='indentation contains tabs', physical_line='\\trclpy.spin(minimal_subscriber)\\n') is not inline ignored\n"}
+[1.213959] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "E305" should be reported\n'}
+[1.214020] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "E305" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.214081] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "E305" will be "Decision.Selected"\n'}
+[1.214140] (basic_subscriber) StdoutLine: {'line': b'style_guide.py              95 DEBUG    Violation(code=\'E305\', filename=\'./basic_subscriber/subscriber_node.py\', line_number=24, column_number=1, text=\'expected 2 blank lines after class or function definition, found 1\', physical_line="if __name__ == \'__main__\':\\n") is not inline ignored\n'}
+[1.214202] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             273 DEBUG    Deciding if "W391" should be reported\n'}
+[1.214263] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             277 DEBUG    The user configured "W391" to be "Selected.Explicitly", "Selected.Implicitly"\n'}
+[1.214327] (basic_subscriber) StdoutLine: {'line': b'style_guide.py             312 DEBUG    "W391" will be "Decision.Selected"\n'}
+[1.214388] (basic_subscriber) StdoutLine: {'line': b"style_guide.py              95 DEBUG    Violation(code='W391', filename='./basic_subscriber/subscriber_node.py', line_number=25, column_number=1, text='blank line at end of file', physical_line='\\tmain()') is not inline ignored\n"}
+[1.214450] (basic_subscriber) StdoutLine: {'line': b'application.py             343 INFO     Found a total of 25 violations and reported 25\n'}
+[1.214511] (basic_subscriber) StdoutLine: {'line': b'\x1b[31m\x1b[1m====================== 2 failed, 1 passed in 0.22 seconds ======================\x1b[0m\n'}
+[1.262932] (basic_subscriber) CommandEnded: {'returncode': 1}
+[1.263295] (basic_subscriber) TestFailure: {'identifier': 'basic_subscriber'}
+[1.263331] (basic_subscriber) JobEnded: {'identifier': 'basic_subscriber', 'rc': 0}
+[1.264061] (-) EventReactorShutdown: {}

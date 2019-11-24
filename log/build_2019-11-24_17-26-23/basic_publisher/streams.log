@@ -1,0 +1,24 @@
+Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_publisher --record /home/autobob/ros2-dashing/pubsub/build/basic_publisher/install.log --single-version-externally-managed
+running egg_info
+writing /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/PKG-INFO
+writing dependency_links to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/dependency_links.txt
+writing entry points to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/entry_points.txt
+writing requirements to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/requires.txt
+writing top-level names to /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/top_level.txt
+reading manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/SOURCES.txt'
+writing manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+copying basic_publisher/publisher_node.py -> /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build/lib/basic_publisher
+running install
+running install_lib
+copying /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build/lib/basic_publisher/publisher_node.py -> /home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher
+byte-compiling /home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher/publisher_node.py to publisher_node.cpython-36.pyc
+running install_data
+running install_egg_info
+removing '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher-0.0.0-py3.6.egg-info' (and everything under it)
+Copying /home/autobob/ros2-dashing/pubsub/build/basic_publisher/basic_publisher.egg-info to /home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher-0.0.0-py3.6.egg-info
+running install_scripts
+Installing talker script to /home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/basic_publisher
+writing list of installed files to '/home/autobob/ros2-dashing/pubsub/build/basic_publisher/install.log'
+Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_publisher --record /home/autobob/ros2-dashing/pubsub/build/basic_publisher/install.log --single-version-externally-managed

@@ -1,0 +1,271 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths='.', build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base='log', log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f92bfd0dda0>>, merge_install=False, metas='./colcon.meta', packages_above=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f92bfd0dda0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f92bfd150f0>)
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.159s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/autobob/ros2-dashing/pubsub'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/build) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/install) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/log) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_publisher) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' with type 'ros.ament_python' and name 'basic_publisher'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/basic_subscriber) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' with type 'ros.ament_python' and name 'basic_subscriber'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_led) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/serial_led' with type 'ros.ament_python' and name 'serial_led'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/autobob/ros2-dashing/pubsub/src/serial_motor) by extension 'ros'
+[0.181s] DEBUG:colcon.colcon_core.package_identification:Package '/home/autobob/ros2-dashing/pubsub/src/serial_motor' with type 'ros.ament_python' and name 'serial_motor'
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'basic_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'basic_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/autobob/ros2-dashing/pubsub/build/basic_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/basic_publisher', 'merge_install': False, 'path': '/home/autobob/ros2-dashing/pubsub/src/basic_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'basic_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'basic_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber', 'merge_install': False, 'path': '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'serial_led' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'serial_led' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/autobob/ros2-dashing/pubsub/build/serial_led', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/serial_led', 'merge_install': False, 'path': '/home/autobob/ros2-dashing/pubsub/src/serial_led', 'symlink_install': False, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/autobob/ros2-dashing/pubsub/build/serial_motor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/autobob/ros2-dashing/pubsub/install/serial_motor', 'merge_install': False, 'path': '/home/autobob/ros2-dashing/pubsub/src/serial_motor', 'symlink_install': False, 'test_result_base': None}
+[0.194s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.195s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.195s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' with build type 'ament_python'
+[0.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_publisher', 'ament_prefix_path')
+[0.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/ament_prefix_path.ps1'
+[0.199s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/ament_prefix_path.dsv'
+[0.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/ament_prefix_path.sh'
+[0.201s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.201s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.203s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.205s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' with build type 'ament_python'
+[0.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_subscriber', 'ament_prefix_path')
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/ament_prefix_path.ps1'
+[0.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/ament_prefix_path.dsv'
+[0.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/ament_prefix_path.sh'
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.211s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.213s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/autobob/ros2-dashing/pubsub/src/serial_led' with build type 'ament_python'
+[0.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_led', 'ament_prefix_path')
+[0.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/ament_prefix_path.ps1'
+[0.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/ament_prefix_path.dsv'
+[0.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/ament_prefix_path.sh'
+[0.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.219s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/autobob/ros2-dashing/pubsub/src/serial_motor' with build type 'ament_python'
+[0.220s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor', 'ament_prefix_path')
+[0.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/ament_prefix_path.ps1'
+[0.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/ament_prefix_path.dsv'
+[0.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/ament_prefix_path.sh'
+[0.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.225s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.450s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher'
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.453s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.688s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber'
+[0.689s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.689s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.690s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.905s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/autobob/ros2-dashing/pubsub/src/serial_led'
+[0.906s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.906s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.908s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[1.120s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/autobob/ros2-dashing/pubsub/src/serial_motor'
+[1.121s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.121s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.124s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[1.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_publisher --record /home/autobob/ros2-dashing/pubsub/build/basic_publisher/install.log --single-version-externally-managed
+[1.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_subscriber --record /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/install.log --single-version-externally-managed
+[1.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/serial_led': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_led build --build-base /home/autobob/ros2-dashing/pubsub/build/serial_led/build install --prefix /home/autobob/ros2-dashing/pubsub/install/serial_led --record /home/autobob/ros2-dashing/pubsub/build/serial_led/install.log --single-version-externally-managed
+[2.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/autobob/ros2-dashing/pubsub/src/serial_motor': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_motor build --build-base /home/autobob/ros2-dashing/pubsub/build/serial_motor/build install --prefix /home/autobob/ros2-dashing/pubsub/install/serial_motor --record /home/autobob/ros2-dashing/pubsub/build/serial_motor/install.log --single-version-externally-managed
+[2.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_subscriber' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_subscriber --record /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/install.log --single-version-externally-managed
+[2.173s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber' for CMake module files
+[2.174s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber' for CMake config files
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib'
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/bin'
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/pkgconfig/basic_subscriber.pc'
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/lib/python3.6/site-packages'
+[2.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_subscriber', 'pythonpath')
+[2.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/pythonpath.ps1'
+[2.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/pythonpath.dsv'
+[2.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/hook/pythonpath.sh'
+[2.178s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(basic_subscriber)
+[2.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/package.ps1'
+[2.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/package.dsv'
+[2.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/package.sh'
+[2.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/package.bash'
+[2.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/basic_subscriber/package.zsh'
+[2.185s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/autobob/ros2-dashing/pubsub/install/basic_subscriber/share/colcon-core/packages/basic_subscriber)
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher' for CMake module files
+[2.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/basic_publisher' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher build --build-base /home/autobob/ros2-dashing/pubsub/build/basic_publisher/build install --prefix /home/autobob/ros2-dashing/pubsub/install/basic_publisher --record /home/autobob/ros2-dashing/pubsub/build/basic_publisher/install.log --single-version-externally-managed
+[2.188s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher' for CMake config files
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib'
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/bin'
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/pkgconfig/basic_publisher.pc'
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages'
+[2.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_publisher', 'pythonpath')
+[2.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/pythonpath.ps1'
+[2.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/pythonpath.dsv'
+[2.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/hook/pythonpath.sh'
+[2.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(basic_publisher)
+[2.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/package.ps1'
+[2.193s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/package.dsv'
+[2.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/package.sh'
+[2.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/package.bash'
+[2.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/basic_publisher/package.zsh'
+[2.195s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/autobob/ros2-dashing/pubsub/install/basic_publisher/share/colcon-core/packages/basic_publisher)
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led' for CMake module files
+[2.197s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/serial_led' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_led build --build-base /home/autobob/ros2-dashing/pubsub/build/serial_led/build install --prefix /home/autobob/ros2-dashing/pubsub/install/serial_led --record /home/autobob/ros2-dashing/pubsub/build/serial_led/install.log --single-version-externally-managed
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led' for CMake config files
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led/lib'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led/bin'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/pkgconfig/serial_led.pc'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_led/lib/python3.6/site-packages'
+[2.199s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_led', 'pythonpath')
+[2.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/pythonpath.ps1'
+[2.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/pythonpath.dsv'
+[2.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/hook/pythonpath.sh'
+[2.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_led)
+[2.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/package.ps1'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/package.dsv'
+[2.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/package.sh'
+[2.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/package.bash'
+[2.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_led/share/serial_led/package.zsh'
+[2.204s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/autobob/ros2-dashing/pubsub/install/serial_led/share/colcon-core/packages/serial_led)
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor' for CMake module files
+[2.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/autobob/ros2-dashing/pubsub/src/serial_motor' returned '0': PYTHONPATH=/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/autobob/ros2-dashing/pubsub/build/serial_motor build --build-base /home/autobob/ros2-dashing/pubsub/build/serial_motor/build install --prefix /home/autobob/ros2-dashing/pubsub/install/serial_motor --record /home/autobob/ros2-dashing/pubsub/build/serial_motor/install.log --single-version-externally-managed
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor' for CMake config files
+[2.393s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib'
+[2.393s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor/bin'
+[2.393s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/pkgconfig/serial_motor.pc'
+[2.393s] Level 1:colcon.colcon_core.environment:checking '/home/autobob/ros2-dashing/pubsub/install/serial_motor/lib/python3.6/site-packages'
+[2.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor', 'pythonpath')
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/pythonpath.ps1'
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/pythonpath.dsv'
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/hook/pythonpath.sh'
+[2.394s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor)
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/package.ps1'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/package.dsv'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/package.sh'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/package.bash'
+[2.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/serial_motor/package.zsh'
+[2.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/autobob/ros2-dashing/pubsub/install/serial_motor/share/colcon-core/packages/serial_motor)
+[2.397s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.398s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.398s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.398s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.403s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.403s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.403s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.405s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.406s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/autobob/ros2-dashing/pubsub/install/local_setup.ps1'
+[2.407s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/autobob/ros2-dashing/pubsub/install/_local_setup_util_ps1.py'
+[2.408s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/autobob/ros2-dashing/pubsub/install/setup.ps1'
+[2.411s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/autobob/ros2-dashing/pubsub/install/local_setup.sh'
+[2.411s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/autobob/ros2-dashing/pubsub/install/_local_setup_util_sh.py'
+[2.412s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/autobob/ros2-dashing/pubsub/install/setup.sh'
+[2.414s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/autobob/ros2-dashing/pubsub/install/local_setup.bash'
+[2.415s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/autobob/ros2-dashing/pubsub/install/setup.bash'
+[2.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/autobob/ros2-dashing/pubsub/install/local_setup.zsh'
+[2.420s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/autobob/ros2-dashing/pubsub/install/setup.zsh'

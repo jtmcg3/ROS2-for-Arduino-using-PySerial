@@ -1,0 +1,5 @@
+  File "/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher/publisher_node.py", line 41
+    elif condition == 2
+                      ^
+SyntaxError: invalid syntax
+

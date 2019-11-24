@@ -1,0 +1,393 @@
+running pytest
+running egg_info
+writing /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/PKG-INFO
+writing dependency_links to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/dependency_links.txt
+writing entry points to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/entry_points.txt
+writing requirements to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/requires.txt
+writing top-level names to /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/top_level.txt
+reading manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'
+writing manifest file '/home/autobob/ros2-dashing/pubsub/build/basic_subscriber/basic_subscriber.egg-info/SOURCES.txt'
+running build_ext
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.6.8, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+rootdir: /home/autobob/ros2-dashing/pubsub/src/basic_subscriber, inifile:
+plugins: ament-xmllint-0.7.11, ament-pep257-0.7.11, ament-lint-0.7.11, ament-flake8-0.7.11, ament-copyright-0.7.11, cov-2.5.1
+[1m
+collecting 0 items                                                             [0m[1m
+collecting 1 item                                                              [0m[1m
+collecting 2 items                                                             [0m[1m
+collecting 3 items                                                             [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py F[36m                                                 [ 33%][0m
+test/test_flake8.py F[36m                                                    [ 66%][0m
+test/test_pep257.py .[36m                                                    [100%][0m
+
+ generated xml file: /home/autobob/ros2-dashing/pubsub/build/basic_subscriber/pytest.xml 
+=================================== FAILURES ===================================
+[31m[1m________________________________ test_copyright ________________________________[0m
+[1m[31mtest/test_copyright.py[0m:23: in test_copyright
+[1m    assert rc == 0, 'Found errors'[0m
+[1m[31mE   AssertionError: Found errors[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stderr call -----------------------------
+basic_subscriber/subscriber_node.py: could not find copyright notice
+1 errors, checked 5 files
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[1m    assert rc == 0, 'Found errors'[0m
+[1m[31mE   AssertionError: Found errors[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./basic_subscriber/subscriber_node.py:6:1: E302 expected 2 blank lines, found 1
+class MinimalSubscriber(Node):
+^
+
+./basic_subscriber/subscriber_node.py:8:1: W191 indentation contains tabs
+	def __init__(self):
+^
+
+./basic_subscriber/subscriber_node.py:9:1: W191 indentation contains tabs
+		super().__init__('minimal_subscriber')
+^
+
+./basic_subscriber/subscriber_node.py:10:1: W191 indentation contains tabs
+		self.subscription = self.create_subscription(String,
+^
+
+./basic_subscriber/subscriber_node.py:11:1: W191 indentation contains tabs
+			                                         'topic',
+^
+
+./basic_subscriber/subscriber_node.py:11:4: E101 indentation contains mixed spaces and tabs
+			                                         'topic',
+   ^
+
+./basic_subscriber/subscriber_node.py:11:45: E128 continuation line under-indented for visual indent
+			                                         'topic',
+                                            ^
+
+./basic_subscriber/subscriber_node.py:12:1: W191 indentation contains tabs
+			                                         self.listener_callback,
+^
+
+./basic_subscriber/subscriber_node.py:12:4: E101 indentation contains mixed spaces and tabs
+			                                         self.listener_callback,
+   ^
+
+./basic_subscriber/subscriber_node.py:12:45: E128 continuation line under-indented for visual indent
+			                                         self.listener_callback,
+                                            ^
+
+./basic_subscriber/subscriber_node.py:13:1: W191 indentation contains tabs
+			                                         10)
+^
+
+./basic_subscriber/subscriber_node.py:13:4: E101 indentation contains mixed spaces and tabs
+			                                         10)
+   ^
+
+./basic_subscriber/subscriber_node.py:13:45: E128 continuation line under-indented for visual indent
+			                                         10)
+                                            ^
+
+./basic_subscriber/subscriber_node.py:14:1: W191 indentation contains tabs
+		self.subscription # prevent unused variable warning
+^
+
+./basic_subscriber/subscriber_node.py:14:20: E261 at least two spaces before inline comment
+		self.subscription # prevent unused variable warning
+                   ^
+
+./basic_subscriber/subscriber_node.py:16:1: W191 indentation contains tabs
+	def listener_callback(self, std_msgs):		
+^
+
+./basic_subscriber/subscriber_node.py:16:40: W291 trailing whitespace
+	def listener_callback(self, std_msgs):		
+                                       ^
+
+./basic_subscriber/subscriber_node.py:17:1: W191 indentation contains tabs
+		self.get_logger.info('I heard: {}'.format(msg.data))
+^
+
+./basic_subscriber/subscriber_node.py:17:45: F821 undefined name 'msg'
+		self.get_logger.info('I heard: {}'.format(msg.data))
+                                            ^
+
+./basic_subscriber/subscriber_node.py:19:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./basic_subscriber/subscriber_node.py:20:1: W191 indentation contains tabs
+	rclpy.init(args=args)
+^
+
+./basic_subscriber/subscriber_node.py:21:1: W191 indentation contains tabs
+	minimal_subscriber = MinimalSubscriber()
+^
+
+./basic_subscriber/subscriber_node.py:22:1: W191 indentation contains tabs
+	rclpy.spin(minimal_subscriber)
+^
+
+./basic_subscriber/subscriber_node.py:24:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./basic_subscriber/subscriber_node.py:25:1: W391 blank line at end of file
+	main()^
+
+3     E101 indentation contains mixed spaces and tabs
+3     E128 continuation line under-indented for visual indent
+1     E261 at least two spaces before inline comment
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+1     F821 undefined name 'msg'
+12    W191 indentation contains tabs
+1     W291 trailing whitespace
+1     W391 blank line at end of file
+
+6 files checked
+25 errors
+
+'E'-type errors: 10
+'F'-type errors: 1
+'W'-type errors: 14
+
+Checked files:
+
+* ./setup.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./basic_subscriber/subscriber_node.py
+* ./basic_subscriber/__init__.py
+------------------------------ Captured log call -------------------------------
+manager.py                 210 DEBUG    Registered option "Option(-v, --verbose, action=count, default=0, dest=verbose, type=None, callback=None, help=Print more information about what is happening in flake8. This option is repeatable and will increase verbosity each time it is repeated., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(-q, --quiet, action=count, default=0, dest=quiet, type=None, callback=None, help=Report only file names, or nothing. This option is repeatable., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --count, action=store_true, default=None, dest=count, type=None, callback=None, help=Print total number of errors and warnings to standard error and set the exit code to 1 if total is not empty., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --diff, action=store_true, default=None, dest=diff, type=None, callback=None, help=Report changes only within line number ranges in the unified diff provided on standard in by the user., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --exclude, action=None, default=.svn,CVS,.bzr,.hg,.git,__pycache__,.tox,.eggs,*.egg, dest=exclude, type=None, callback=None, help=Comma-separated list of files or directories to exclude. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".
+manager.py                 210 DEBUG    Registered option "Option(None, --filename, action=None, default=*.py, dest=filename, type=None, callback=None, help=Only check for filenames matching the patterns in this comma-separated list. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".
+manager.py                 210 DEBUG    Registered option "Option(None, --stdin-display-name, action=None, default=stdin, dest=stdin_display_name, type=None, callback=None, help=The name used when reporting errors from code passed via stdin. This is useful for editors piping the file contents to flake8. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --format, action=None, default=default, dest=format, type=None, callback=None, help=Format errors according to the chosen formatter., callback=None, callback_args=None, callback_kwargs=None, metavar=format)".
+manager.py                 210 DEBUG    Registered option "Option(None, --hang-closing, action=store_true, default=None, dest=hang_closing, type=None, callback=None, help=Hang closing bracket instead of matching indentation of opening bracket's line., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --ignore, action=None, default=E121,E123,E126,E226,E24,E704,W503,W504, dest=ignore, type=None, callback=None, help=Comma-separated list of errors and warnings to ignore (or skip). For example, ``--ignore=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".
+manager.py                 210 DEBUG    Registered option "Option(None, --max-line-length, action=None, default=79, dest=max_line_length, type=int, callback=None, help=Maximum allowed line length for the entirety of this run. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=n)".
+manager.py                 210 DEBUG    Registered option "Option(None, --select, action=None, default=E,F,W,C90, dest=select, type=None, callback=None, help=Comma-separated list of errors and warnings to enable. For example, ``--select=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".
+manager.py                 210 DEBUG    Registered option "Option(None, --disable-noqa, action=store_true, default=False, dest=disable_noqa, type=None, callback=None, help=Disable the effect of "# noqa". This will report errors on lines with "# noqa" at the end., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --show-source, action=store_true, default=None, dest=show_source, type=None, callback=None, help=Show the source generate each error or warning., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --statistics, action=store_true, default=None, dest=statistics, type=None, callback=None, help=Count errors and warnings., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --enable-extensions, action=None, default=, dest=enable_extensions, type=string, callback=None, help=Enable plugins and extensions that are otherwise disabled by default, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --exit-zero, action=store_true, default=None, dest=exit_zero, type=None, callback=None, help=Exit with status code "0" even if there are errors., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --install-hook, action=callback, default=None, dest=install_hook, type=choice, callback=<function install at 0x7f9ace3a4f28>, help=Install a hook that is run prior to a commit for the supported version control system., callback=<function install at 0x7f9ace3a4f28>, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(-j, --jobs, action=None, default=auto, dest=jobs, type=string, callback=None, help=Number of subprocesses to use to run checks in parallel. This is ignored on Windows. The default, "auto", will auto-detect the number of processors available to use. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --output-file, action=None, default=None, dest=output_file, type=string, callback=None, help=Redirect report to a file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --tee, action=store_true, default=False, dest=tee, type=None, callback=None, help=Write to stdout and output-file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --append-config, action=append, default=None, dest=append_config, type=None, callback=None, help=Provide extra config files to parse in addition to the files found by Flake8 by default. These files are the last ones read and so they take the highest precedence when multiple files provide the same option., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --config, action=None, default=None, dest=config, type=None, callback=None, help=Path to the config file that will be the authoritative config source. This will cause Flake8 to ignore all other configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --isolated, action=store_true, default=False, dest=isolated, type=None, callback=None, help=Ignore all found configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --benchmark, action=store_true, default=False, dest=benchmark, type=None, callback=None, help=Print benchmark information about this run of Flake8, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --bug-report, action=callback, default=None, dest=bug_report, type=None, callback=<function print_information at 0x7f9ace3a4d08>, help=Print information necessary when preparing a bug report, callback=<function print_information at 0x7f9ace3a4d08>, callback_args=None, callback_kwargs={'option_manager': <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>}, metavar=None)".
+config.py                  128 DEBUG    Found local configuration files: ['/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg']
+manager.py                 272 INFO     Loading entry-points for "flake8.extension".
+manager.py                 287 DEBUG    Loaded Plugin(name="C90", entry_point="C90 = mccabe:McCabeChecker") for plugin "C90".
+manager.py                 287 DEBUG    Loaded Plugin(name="F", entry_point="F = flake8.plugins.pyflakes:FlakesChecker") for plugin "F".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.ambiguous_identifier", entry_point="pycodestyle.ambiguous_identifier = pycodestyle:ambiguous_identifier") for plugin "pycodestyle.ambiguous_identifier".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.bare_except", entry_point="pycodestyle.bare_except = pycodestyle:bare_except") for plugin "pycodestyle.bare_except".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.blank_lines", entry_point="pycodestyle.blank_lines = pycodestyle:blank_lines") for plugin "pycodestyle.blank_lines".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.break_around_binary_operator", entry_point="pycodestyle.break_around_binary_operator = pycodestyle:break_around_binary_operator") for plugin "pycodestyle.break_around_binary_operator".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_negative", entry_point="pycodestyle.comparison_negative = pycodestyle:comparison_negative") for plugin "pycodestyle.comparison_negative".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_to_singleton", entry_point="pycodestyle.comparison_to_singleton = pycodestyle:comparison_to_singleton") for plugin "pycodestyle.comparison_to_singleton".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_type", entry_point="pycodestyle.comparison_type = pycodestyle:comparison_type") for plugin "pycodestyle.comparison_type".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.compound_statements", entry_point="pycodestyle.compound_statements = pycodestyle:compound_statements") for plugin "pycodestyle.compound_statements".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.continued_indentation", entry_point="pycodestyle.continued_indentation = pycodestyle:continued_indentation") for plugin "pycodestyle.continued_indentation".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.explicit_line_join", entry_point="pycodestyle.explicit_line_join = pycodestyle:explicit_line_join") for plugin "pycodestyle.explicit_line_join".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.extraneous_whitespace", entry_point="pycodestyle.extraneous_whitespace = pycodestyle:extraneous_whitespace") for plugin "pycodestyle.extraneous_whitespace".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.imports_on_separate_lines", entry_point="pycodestyle.imports_on_separate_lines = pycodestyle:imports_on_separate_lines") for plugin "pycodestyle.imports_on_separate_lines".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.indentation", entry_point="pycodestyle.indentation = pycodestyle:indentation") for plugin "pycodestyle.indentation".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.maximum_line_length", entry_point="pycodestyle.maximum_line_length = pycodestyle:maximum_line_length") for plugin "pycodestyle.maximum_line_length".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace", entry_point="pycodestyle.missing_whitespace = pycodestyle:missing_whitespace") for plugin "pycodestyle.missing_whitespace".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_after_import_keyword", entry_point="pycodestyle.missing_whitespace_after_import_keyword = pycodestyle:missing_whitespace_after_import_keyword") for plugin "pycodestyle.missing_whitespace_after_import_keyword".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_around_operator", entry_point="pycodestyle.missing_whitespace_around_operator = pycodestyle:missing_whitespace_around_operator") for plugin "pycodestyle.missing_whitespace_around_operator".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.module_imports_on_top_of_file", entry_point="pycodestyle.module_imports_on_top_of_file = pycodestyle:module_imports_on_top_of_file") for plugin "pycodestyle.module_imports_on_top_of_file".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_backticks", entry_point="pycodestyle.python_3000_backticks = pycodestyle:python_3000_backticks") for plugin "pycodestyle.python_3000_backticks".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_has_key", entry_point="pycodestyle.python_3000_has_key = pycodestyle:python_3000_has_key") for plugin "pycodestyle.python_3000_has_key".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_not_equal", entry_point="pycodestyle.python_3000_not_equal = pycodestyle:python_3000_not_equal") for plugin "pycodestyle.python_3000_not_equal".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_raise_comma", entry_point="pycodestyle.python_3000_raise_comma = pycodestyle:python_3000_raise_comma") for plugin "pycodestyle.python_3000_raise_comma".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_obsolete", entry_point="pycodestyle.tabs_obsolete = pycodestyle:tabs_obsolete") for plugin "pycodestyle.tabs_obsolete".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_or_spaces", entry_point="pycodestyle.tabs_or_spaces = pycodestyle:tabs_or_spaces") for plugin "pycodestyle.tabs_or_spaces".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_blank_lines", entry_point="pycodestyle.trailing_blank_lines = pycodestyle:trailing_blank_lines") for plugin "pycodestyle.trailing_blank_lines".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_whitespace", entry_point="pycodestyle.trailing_whitespace = pycodestyle:trailing_whitespace") for plugin "pycodestyle.trailing_whitespace".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_comma", entry_point="pycodestyle.whitespace_around_comma = pycodestyle:whitespace_around_comma") for plugin "pycodestyle.whitespace_around_comma".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_keywords", entry_point="pycodestyle.whitespace_around_keywords = pycodestyle:whitespace_around_keywords") for plugin "pycodestyle.whitespace_around_keywords".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_named_parameter_equals", entry_point="pycodestyle.whitespace_around_named_parameter_equals = pycodestyle:whitespace_around_named_parameter_equals") for plugin "pycodestyle.whitespace_around_named_parameter_equals".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_operator", entry_point="pycodestyle.whitespace_around_operator = pycodestyle:whitespace_around_operator") for plugin "pycodestyle.whitespace_around_operator".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_comment", entry_point="pycodestyle.whitespace_before_comment = pycodestyle:whitespace_before_comment") for plugin "pycodestyle.whitespace_before_comment".
+manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_parameters", entry_point="pycodestyle.whitespace_before_parameters = pycodestyle:whitespace_before_parameters") for plugin "pycodestyle.whitespace_before_parameters".
+manager.py                 272 INFO     Loading entry-points for "flake8.listen".
+manager.py                 272 INFO     Loading entry-points for "flake8.report".
+manager.py                 287 DEBUG    Loaded Plugin(name="default", entry_point="default = flake8.formatting.default:Default") for plugin "default".
+manager.py                 287 DEBUG    Loaded Plugin(name="pylint", entry_point="pylint = flake8.formatting.default:Pylint") for plugin "pylint".
+manager.py                 287 DEBUG    Loaded Plugin(name="quiet-filename", entry_point="quiet-filename = flake8.formatting.default:FilenameOnly") for plugin "quiet-filename".
+manager.py                 287 DEBUG    Loaded Plugin(name="quiet-nothing", entry_point="quiet-nothing = flake8.formatting.default:Nothing") for plugin "quiet-nothing".
+manager.py                 176 INFO     Loading plugin "C90" from entry-point.
+manager.py                 176 INFO     Loading plugin "F" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.ambiguous_identifier" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.bare_except" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.blank_lines" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.break_around_binary_operator" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_negative" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_to_singleton" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_type" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.compound_statements" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.continued_indentation" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.explicit_line_join" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.extraneous_whitespace" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.imports_on_separate_lines" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.indentation" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.maximum_line_length" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_after_import_keyword" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_around_operator" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.module_imports_on_top_of_file" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_backticks" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_has_key" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_not_equal" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_raise_comma" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_obsolete" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_or_spaces" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_blank_lines" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_whitespace" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_comma" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_keywords" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_named_parameter_equals" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_operator" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_comment" from entry-point.
+manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_parameters" from entry-point.
+manager.py                 176 INFO     Loading plugin "default" from entry-point.
+manager.py                 176 INFO     Loading plugin "pylint" from entry-point.
+manager.py                 176 INFO     Loading plugin "quiet-filename" from entry-point.
+manager.py                 176 INFO     Loading plugin "quiet-nothing" from entry-point.
+manager.py                 231 DEBUG    Registering options from plugin "C90" on OptionManager <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>
+manager.py                 210 DEBUG    Registered option "Option(None, --max-complexity, action=store, default=-1, dest=max_complexity, type=int, callback=None, help=McCabe complexity threshold, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 219 DEBUG    Removing ['C90'] from the default ignore list
+manager.py                 225 DEBUG    Attempted to remove C90 from default ignore but it was not a member of the list.
+manager.py                 244 DEBUG    Extending default select list with ['C90']
+manager.py                 231 DEBUG    Registering options from plugin "F" on OptionManager <flake8.options.manager.OptionManager object at 0x7f9acc2b6390>
+manager.py                 210 DEBUG    Registered option "Option(None, --builtins, action=None, default=None, dest=builtins, type=None, callback=None, help=define more built-ins, comma separated, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --doctests, action=store_true, default=False, dest=doctests, type=None, callback=None, help=check syntax of the doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --include-in-doctest, action=None, default=, dest=include_in_doctest, type=string, callback=None, help=Run doctests only on these files, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 210 DEBUG    Registered option "Option(None, --exclude-from-doctest, action=None, default=, dest=exclude_from_doctest, type=string, callback=None, help=Skip these files when running doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+manager.py                 219 DEBUG    Removing ['F'] from the default ignore list
+manager.py                 225 DEBUG    Attempted to remove F from default ignore but it was not a member of the list.
+manager.py                 244 DEBUG    Extending default select list with ['F']
+config.py                  294 DEBUG    Ignoring user and locally found configuration files. Reading only configuration from "/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini" specified via --config by the user
+config.py                   85 DEBUG    Found cli configuration files: ['/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini']
+config.py                  249 DEBUG    Parsing CLI configuration files.
+config.py                  195 DEBUG    Option "extend-ignore" is not registered. Ignoring.
+config.py                  195 DEBUG    Option "import-order-style" is not registered. Ignoring.
+config.py                  208 DEBUG    Option "max-line-length" returned value: 99
+config.py                  187 DEBUG    99 has been normalized to 99 for option "max_line_length"
+config.py                  208 DEBUG    Option "show-source" returned value: True
+config.py                  187 DEBUG    True has been normalized to True for option "show_source"
+config.py                  208 DEBUG    Option "statistics" returned value: True
+config.py                  187 DEBUG    True has been normalized to True for option "statistics"
+aggregator.py               52 DEBUG    Extended default ignore list: []
+aggregator.py               55 DEBUG    Merged default ignore list: ['E126', 'W503', 'E226', 'E24', 'E704', 'W504', 'E123', 'E121']
+aggregator.py               59 DEBUG    Extended default select list: ['F', 'C90']
+aggregator.py               73 DEBUG    Overriding default value of (79) for "max_line_length" with (99)
+aggregator.py               73 DEBUG    Overriding default value of (None) for "show_source" with (True)
+aggregator.py               73 DEBUG    Overriding default value of (None) for "statistics" with (True)
+manager.py                 208 DEBUG    Providing options to plugin "C90".
+manager.py                 208 DEBUG    Providing options to plugin "F".
+manager.py                 376 DEBUG    Retrieving plugin for "default".
+manager.py                 371 DEBUG    Checking for "default" in plugin type manager.
+manager.py                 376 DEBUG    Retrieving plugin for "default".
+checker.py                 341 INFO     Making checkers
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber" has not been excluded
+checker.py                 192 DEBUG    ".eggs" has been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/setup.cfg" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/package.xml" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/package.xml" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test" has not been excluded
+checker.py                 192 DEBUG    "__pycache__" has been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_flake8.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_flake8.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_pep257.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_pep257.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test/test_copyright.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/test_copyright.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber/subscriber_node.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/subscriber_node.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber/__init__.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/__init__.py" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/resource/basic_subscriber" has not been excluded
+checker.py                 198 DEBUG    "/home/autobob/ros2-dashing/pubsub/src/basic_subscriber/basic_subscriber" has not been excluded
+checker.py                 248 INFO     Checking 6 files
+application.py             311 INFO     Finished running
+application.py             339 INFO     Reporting errors
+style_guide.py             273 DEBUG    Deciding if "E302" should be reported
+style_guide.py             277 DEBUG    The user configured "E302" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "E302" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_subscriber/subscriber_node.py', line_number=6, column_number=1, text='expected 2 blank lines, found 1', physical_line='class MinimalSubscriber(Node):\n') is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "W191" should be reported
+style_guide.py             277 DEBUG    The user configured "W191" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "W191" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=8, column_number=1, text='indentation contains tabs', physical_line='\tdef __init__(self):\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=9, column_number=1, text='indentation contains tabs', physical_line="\t\tsuper().__init__('minimal_subscriber')\n") is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=10, column_number=1, text='indentation contains tabs', physical_line='\t\tself.subscription = self.create_subscription(String,\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=11, column_number=1, text='indentation contains tabs', physical_line="\t\t\t                                         'topic',\n") is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "E101" should be reported
+style_guide.py             277 DEBUG    The user configured "E101" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "E101" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='E101', filename='./basic_subscriber/subscriber_node.py', line_number=11, column_number=4, text='indentation contains mixed spaces and tabs', physical_line="\t\t\t                                         'topic',\n") is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "E128" should be reported
+style_guide.py             277 DEBUG    The user configured "E128" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "E128" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='E128', filename='./basic_subscriber/subscriber_node.py', line_number=11, column_number=45, text='continuation line under-indented for visual indent', physical_line="\t\t\t                                         'topic',\n") is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=1, text='indentation contains tabs', physical_line='\t\t\t                                         self.listener_callback,\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='E101', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=4, text='indentation contains mixed spaces and tabs', physical_line='\t\t\t                                         self.listener_callback,\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='E128', filename='./basic_subscriber/subscriber_node.py', line_number=12, column_number=45, text='continuation line under-indented for visual indent', physical_line='\t\t\t                                         self.listener_callback,\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=1, text='indentation contains tabs', physical_line='\t\t\t                                         10)\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='E101', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=4, text='indentation contains mixed spaces and tabs', physical_line='\t\t\t                                         10)\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='E128', filename='./basic_subscriber/subscriber_node.py', line_number=13, column_number=45, text='continuation line under-indented for visual indent', physical_line='\t\t\t                                         10)\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=14, column_number=1, text='indentation contains tabs', physical_line='\t\tself.subscription # prevent unused variable warning\n') is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "E261" should be reported
+style_guide.py             277 DEBUG    The user configured "E261" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "E261" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='E261', filename='./basic_subscriber/subscriber_node.py', line_number=14, column_number=20, text='at least two spaces before inline comment', physical_line='\t\tself.subscription # prevent unused variable warning\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=16, column_number=1, text='indentation contains tabs', physical_line='\tdef listener_callback(self, std_msgs):\t\t\n') is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "W291" should be reported
+style_guide.py             277 DEBUG    The user configured "W291" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "W291" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='W291', filename='./basic_subscriber/subscriber_node.py', line_number=16, column_number=40, text='trailing whitespace', physical_line='\tdef listener_callback(self, std_msgs):\t\t\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=17, column_number=1, text='indentation contains tabs', physical_line="\t\tself.get_logger.info('I heard: {}'.format(msg.data))\n") is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "F821" should be reported
+style_guide.py             277 DEBUG    The user configured "F821" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "F821" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='F821', filename='./basic_subscriber/subscriber_node.py', line_number=17, column_number=45, text="undefined name 'msg'", physical_line="\t\tself.get_logger.info('I heard: {}'.format(msg.data))\n") is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='E302', filename='./basic_subscriber/subscriber_node.py', line_number=19, column_number=1, text='expected 2 blank lines, found 1', physical_line='def main(args=None):\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=20, column_number=1, text='indentation contains tabs', physical_line='\trclpy.init(args=args)\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=21, column_number=1, text='indentation contains tabs', physical_line='\tminimal_subscriber = MinimalSubscriber()\n') is not inline ignored
+style_guide.py              95 DEBUG    Violation(code='W191', filename='./basic_subscriber/subscriber_node.py', line_number=22, column_number=1, text='indentation contains tabs', physical_line='\trclpy.spin(minimal_subscriber)\n') is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "E305" should be reported
+style_guide.py             277 DEBUG    The user configured "E305" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "E305" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='E305', filename='./basic_subscriber/subscriber_node.py', line_number=24, column_number=1, text='expected 2 blank lines after class or function definition, found 1', physical_line="if __name__ == '__main__':\n") is not inline ignored
+style_guide.py             273 DEBUG    Deciding if "W391" should be reported
+style_guide.py             277 DEBUG    The user configured "W391" to be "Selected.Explicitly", "Selected.Implicitly"
+style_guide.py             312 DEBUG    "W391" will be "Decision.Selected"
+style_guide.py              95 DEBUG    Violation(code='W391', filename='./basic_subscriber/subscriber_node.py', line_number=25, column_number=1, text='blank line at end of file', physical_line='\tmain()') is not inline ignored
+application.py             343 INFO     Found a total of 25 violations and reported 25
+[31m[1m====================== 2 failed, 1 passed in 0.22 seconds ======================[0m
