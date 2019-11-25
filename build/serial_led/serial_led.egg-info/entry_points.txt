@@ -1,3 +1,0 @@
-[console_scripts]
-led = serial_led.led_node:main
-

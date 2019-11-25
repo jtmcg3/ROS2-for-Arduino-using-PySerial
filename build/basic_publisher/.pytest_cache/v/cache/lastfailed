@@ -1,4 +1,0 @@
-{
-  "test/test_copyright.py::test_copyright": true,
-  "test/test_flake8.py::test_flake8": true
-}

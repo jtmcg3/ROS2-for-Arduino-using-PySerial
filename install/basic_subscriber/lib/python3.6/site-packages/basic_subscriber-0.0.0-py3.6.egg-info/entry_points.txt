@@ -1,3 +1,0 @@
-[console_scripts]
-listener = basic_subscriber.subscriber_node:main
-

@@ -1,5 +1,0 @@
-  File "/home/autobob/ros2-dashing/pubsub/install/basic_publisher/lib/python3.6/site-packages/basic_publisher/publisher_node.py", line 37
-    elif self.i % 5 == 0;
-                        ^
-SyntaxError: invalid syntax
-
