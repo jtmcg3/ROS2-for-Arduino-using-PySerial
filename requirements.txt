@@ -119,7 +119,7 @@ pytz==2018.3
 pyxdg==0.25
 PyYAML==3.12
 quality-of-service-demo-py==0.7.9
-reportlab==3.4.0
+reportlab==3.5.55
 requests==2.18.4
 requests-unixsocket==0.1.5
 roman==2.0.0
