@@ -92,7 +92,7 @@ osrf-pycommon==0.1.9
 pexpect==4.2.1
 Pillow==5.1.0
 pluggy==0.6.0
-protobuf==3.0.0
+protobuf==3.18.3
 psutil==5.4.2
 py==1.5.2
 pycairo==1.16.2
